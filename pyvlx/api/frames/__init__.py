@@ -7,6 +7,14 @@ from .frame_activate_scene import (
     ActivateSceneConfirmationStatus, FrameActivateSceneConfirmation,
     FrameActivateSceneRequest)
 from .frame_activation_log_updated import FrameActivationLogUpdatedNotification
+from .frame_activation_log_header import (
+    FrameGetActivationLogHeaderConfirmation, FrameGetActivationLogHeaderRequest)
+from .frame_activation_log_line import (
+    FrameGetActivationLogLineRequest, FrameGetActivationLogLineConfirmation)
+from .frame_activation_log_multiple_lines import (
+    FrameGetActivationLogLinesRequest, FrameGetActivationLogLinesConfirmation,
+    FrameGetActivationLogLinesNotification)
+
 from .frame_command_send import (
     CommandSendConfirmationStatus, FrameCommandRemainingTimeNotification,
     FrameCommandRunStatusNotification, FrameCommandSendConfirmation,

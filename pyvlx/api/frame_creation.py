@@ -4,6 +4,10 @@ from pyvlx.const import Command
 from .frames import (
     FrameActivateSceneConfirmation, FrameActivateSceneRequest,
     FrameActivationLogUpdatedNotification,
+    FrameGetActivationLogHeaderRequest, FrameGetActivationLogHeaderConfirmation,
+    FrameGetActivationLogLineRequest, FrameGetActivationLogLineConfirmation,
+    FrameGetActivationLogLinesRequest, FrameGetActivationLogLinesConfirmation,
+    FrameGetActivationLogLinesNotification,
     FrameCommandRemainingTimeNotification, FrameCommandRunStatusNotification,
     FrameCommandSendConfirmation, FrameCommandSendRequest,
     FrameDiscoverNodesConfirmation, FrameDiscoverNodesNotification,
@@ -166,6 +170,21 @@ def create_frame(command):
 
     if command == Command.GW_ACTIVATION_LOG_UPDATED_NTF:
         return FrameActivationLogUpdatedNotification()
+
+    if command == Command.GW_GET_ACTIVATION_LOG_HEADER_REQ:
+        return FrameGetActivationLogHeaderRequest()
+    if command == Command.GW_GET_ACTIVATION_LOG_HEADER_CFM:
+        return FrameGetActivationLogHeaderConfirmation()
+    if command == Command.GW_GET_ACTIVATION_LOG_LINE_REQ:
+        return FrameGetActivationLogLineRequest()
+    if command == Command.GW_GET_ACTIVATION_LOG_LINE_CFM:
+        return FrameGetActivationLogLineConfirmation()
+    if command == Command.GW_GET_MULTIPLE_ACTIVATION_LOG_LINES_REQ:
+        return FrameGetActivationLogLinesRequest()
+    if command == Command.GW_GET_MULTIPLE_ACTIVATION_LOG_LINES_CFM:
+        return FrameGetActivationLogLinesConfirmation()
+    if command == Command.GW_GET_MULTIPLE_ACTIVATION_LOG_LINES_NTF:
+        return FrameGetActivationLogLinesNotification()
 
     if command == Command.GW_HOUSE_STATUS_MONITOR_ENABLE_REQ:
         return FrameHouseStatusMonitorEnableRequest()

@@ -1,12 +1,13 @@
 """Module for basic klf200 gateway functions."""
+from datetime import timedelta
 
 from .api import (GetState, GetNetworkSetup, GetProtocolVersion, GetVersion,
                   GetLocalTime, LeaveLearnState, FactoryDefault, PasswordEnter,
-                  SetUTC, Reboot, GetSystemTable, DiscoverNodes)
-
+                  SetUTC, Reboot, GetSystemTable, DiscoverNodes, GetActivationLogHeader, GetActivationLogLine,
+                  GetActivationLogLines)
 from .api.frames import (FrameGetSystemTableUpdateNotification,
-                         FrameDiscoverNodesNotification)
-
+                         FrameDiscoverNodesNotification,
+                         FrameActivationLogUpdatedNotification)
 from .const import (DiscoverStatus)
 from .exception import PyVLXException
 from .log import PYVLXLOG
@@ -26,6 +27,8 @@ class Klf200Gateway:
         self.version = None
         self.device_updated_cbs = []
         self.systemtable = []
+        self.loglines = []
+
         pyvlx.connection.register_frame_received_cb(self.process_frame)
 
     async def process_frame(self, frame):
@@ -38,7 +41,11 @@ class Klf200Gateway:
             if ((frame.discoverstatus == DiscoverStatus.OK) &
                     (len(frame.addednodes) > 0 | len(frame.removed) > 0)):
                 await self.get_systemtable()
-
+        if isinstance(frame, FrameActivationLogUpdatedNotification):
+            PYVLXLOG.debug("NodeUpdater process frame: %s", frame)
+            # we have to add 1 full second to request to avoid duplicates
+            timestamp = max((logline.timestamp for logline in self.loglines)) + timedelta(seconds=1)
+            await self.get_activation_log_lines(fromtimestamp=timestamp)
 
     def register_device_updated_cb(self, device_updated_cb):
         """Register device updated callback."""
@@ -163,6 +170,33 @@ class Klf200Gateway:
             PYVLXLOG.warning("Unable to start node Discovery.")
         return discovernodes.success
 
+    async def get_activation_log_header(self):
+        """Get the Activation Log from API."""
+        get_activation_log = GetActivationLogHeader(pyvlx=self.pyvlx)
+        await get_activation_log.do_api_call()
+        if not get_activation_log.success:
+            raise PyVLXException("Unable to get Activation Log")
+        return get_activation_log.success
+
+    async def get_activation_log_line(self, linenumber=0):
+        """Get the Activation Log from API."""
+        get_activation_log_line = GetActivationLogLine(pyvlx=self.pyvlx, linenumber=linenumber)
+        await get_activation_log_line.do_api_call()
+        if not get_activation_log_line.success:
+            raise PyVLXException("Unable to get Activation Log Line")
+        return get_activation_log_line.success
+
+    async def get_activation_log_lines(self, fromtimestamp=None):
+        """Get the Activation Log from API."""
+        get_activation_log_lines = GetActivationLogLines(pyvlx=self.pyvlx, timestamp=fromtimestamp)
+        await get_activation_log_lines.do_api_call()
+        if not get_activation_log_lines.success:
+            raise PyVLXException("Unable to get Activation Log Lines")
+        self.loglines.extend(get_activation_log_lines.loglines)
+        # we sort and trim the list to 400 elements
+        self.loglines = sorted(self.loglines, key=lambda x: x.timestamp, reverse=True)
+        self.loglines = self.loglines[:400]
+        return get_activation_log_lines.success
 
     def __str__(self):
         """Return object as readable string."""

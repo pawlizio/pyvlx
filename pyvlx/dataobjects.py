@@ -1,6 +1,7 @@
 """Module for Dataobjects."""
 from datetime import datetime
 import time
+from .const import (StatusId, NodeParameter, RunStatus, StatusReply)
 
 
 class DtoLocalTime:
@@ -147,3 +148,55 @@ class DtoLeaveLearnState:
                 type(self).__name__, self.status
             )
         )
+
+
+class DtoActivationLogLine:
+    """Dataobject an Line from Activation Log."""
+
+    def __init__(self):
+        """Initialize DtoLocalTime class."""
+        self.timestamp = datetime.fromtimestamp(0)
+        self.sessionid = 0
+        self.statusid = StatusId(0xFF)
+        self.index = 0
+        self.nodeparameter = NodeParameter(0xFF)
+        self.parametervalue = 0
+        self.runstatus = RunStatus(0)
+        self.statusreply = StatusReply(0x00)
+        self.informationcode = 0
+
+    def __str__(self):
+        """Return human readable string."""
+        return (
+            '<{} timestamp="{}" sessionid="{}" statusid="{}" index="{}" nodeparameter="{}" '
+            'parametervalue="{}" runstatus="{}" statusreply="{}" informationcode="{}"/>'.format(
+                type(self).__name__, self.timestamp, self.sessionid, self.statusid,
+                self.index, self.nodeparameter, self.parametervalue, self.runstatus,
+                self.statusreply, self.informationcode)
+        )
+
+    def from_payload(self, payload):
+        """Build the Dto From Data."""
+        self.timestamp = datetime.fromtimestamp(int.from_bytes(payload[0:4], "big"))
+        self.sessionid = int.from_bytes(payload[4:6], "big")
+        self.statusid = StatusId(payload[6])
+        self.index = payload[7]
+        self.nodeparameter = NodeParameter(payload[8])
+        self.parametervalue = int.from_bytes(payload[9:11], "big")
+        self.runstatus = RunStatus(payload[11])
+        self.statusreply = StatusReply(payload[12])
+        self.informationcode = int.from_bytes(payload[13:], "big")
+
+    def to_payload(self):
+        """Build the Dto From Data."""
+        payload = b''
+        payload = int(self.timestamp.timestamp()).to_bytes(4, byteorder='big')
+        payload += self.sessionid.to_bytes(2, "big")
+        payload += self.statusid.value.to_bytes(1, "big")
+        payload += self.index.to_bytes(1, "big")
+        payload += self.nodeparameter.value.to_bytes(1, "big")
+        payload += self.parametervalue.to_bytes(2, "big")
+        payload += self.runstatus.value.to_bytes(1, "big")
+        payload += self.statusreply.value.to_bytes(1, "big")
+        payload += self.informationcode.to_bytes(4, "big")
+        return payload
