@@ -241,7 +241,6 @@ class Blind(OpeningDevice):
         """
         self.target_orientation = orientation
         self.orientation = orientation
-        print("Orientation in device: %s " % (orientation))
         command_send = CommandSend(
             pyvlx=self.pyvlx,
             wait_for_completion=wait_for_completion,
