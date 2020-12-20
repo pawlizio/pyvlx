@@ -142,8 +142,13 @@ class Blind(OpeningDevice):
     """Blind objects."""
 
     def __init__(
-            self, pyvlx, node_id, name, serial_number, position_parameter=Parameter()
-    ):
+        self,
+        pyvlx,
+        node_id,
+        name,
+        serial_number,
+        position_parameter=Parameter()
+        ):
         """Initialize Blind class.
 
         Parameters:
