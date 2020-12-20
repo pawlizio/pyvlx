@@ -58,7 +58,6 @@ class TCPTransport(asyncio.Protocol):
         """Handle lost connection."""
         PYVLXLOG.warning("KLF200 connection lost")
         self.connection_lost_cb()
-        self.connection_closed_cb()
 
     def _timeout(self):
         """Not connected within TIMEOUT seconds."""
