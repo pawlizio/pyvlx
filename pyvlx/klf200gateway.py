@@ -5,9 +5,6 @@ from .api import (GetState, GetNetworkSetup, GetProtocolVersion, GetVersion,
                   GetLocalTime, LeaveLearnState, FactoryDefault, PasswordEnter,
                   SetUTC, Reboot, GetSystemTable, DiscoverNodes, GetActivationLogHeader, GetActivationLogLine,
                   GetActivationLogLines)
-from .api.frames import (FrameGetSystemTableUpdateNotification,
-                         FrameDiscoverNodesNotification,
-                         FrameActivationLogUpdatedNotification)
 from .const import (DiscoverStatus)
 from .exception import PyVLXException
 from .log import PYVLXLOG
@@ -28,24 +25,6 @@ class Klf200Gateway:
         self.device_updated_cbs = []
         self.systemtable = []
         self.loglines = []
-
-        pyvlx.connection.register_frame_received_cb(self.process_frame)
-
-    async def process_frame(self, frame):
-        """Update nodes via frame, usually received by house monitor."""
-        if isinstance(frame, FrameGetSystemTableUpdateNotification):
-            PYVLXLOG.debug("KLFNodeUpdater process frame: %s", frame)
-            await self.get_systemtable()
-        if isinstance(frame, FrameDiscoverNodesNotification):
-            PYVLXLOG.debug("KLFNodeUpdater process frame: %s", frame)
-            if ((frame.discoverstatus == DiscoverStatus.OK) &
-                    (len(frame.addednodes) > 0 | len(frame.removed) > 0)):
-                await self.get_systemtable()
-        if isinstance(frame, FrameActivationLogUpdatedNotification):
-            PYVLXLOG.debug("NodeUpdater process frame: %s", frame)
-            # we have to add 1 full second to request to avoid duplicates
-            timestamp = max((logline.timestamp for logline in self.loglines)) + timedelta(seconds=1)
-            await self.get_activation_log_lines(fromtimestamp=timestamp)
 
     def register_device_updated_cb(self, device_updated_cb):
         """Register device updated callback."""
