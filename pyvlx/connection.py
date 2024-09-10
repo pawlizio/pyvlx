@@ -114,7 +114,7 @@ class Connection:
             lambda: tcp_client,
             host=self.config.host,
             port=self.config.port,
-            # ssl=self.create_ssl_context(),
+            ssl=self.create_ssl_context(),
         )
         self.connected = True
         self.connection_counter += 1
@@ -161,7 +161,7 @@ class Connection:
     @staticmethod
     def create_ssl_context() -> ssl.SSLContext:
         """Create and return SSL Context."""
-        ssl_context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
+        ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
         ssl_context.check_hostname = False
         ssl_context.verify_mode = ssl.CERT_NONE
         return ssl_context
