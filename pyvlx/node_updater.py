@@ -97,7 +97,8 @@ class NodeUpdater:
             # Set opening device status
             if isinstance(node, OpeningDevice):
                 if (position.position > target.position <= Parameter.MAX) and (
-                    (frame.state == OperatingState.EXECUTING)
+                    (frame.state == OperatingState.EXECUTING or frame.state == OperatingState.WAIT_FOR_POWER)
+                    or frame.remaining_time > 0
                 ):
                     node.is_opening = True
                     PYVLXLOG.debug("%s is opening", node.name)
@@ -110,7 +111,8 @@ class NodeUpdater:
                         "%s will be opening until", node.estimated_completion
                     )
                 elif (position.position < target.position <= Parameter.MAX) and (
-                    (frame.state == OperatingState.EXECUTING)
+                    (frame.state == OperatingState.EXECUTING or frame.state == OperatingState.WAIT_FOR_POWER)
+                    or frame.remaining_time > 0
                 ):
                     node.is_closing = True
                     PYVLXLOG.debug("%s is closing", node.name)
