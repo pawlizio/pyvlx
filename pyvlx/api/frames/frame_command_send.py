@@ -101,7 +101,7 @@ class FrameCommandSendRequest(FrameBase):
         """Return human readable string."""
         functional_parameter = ""
         for key, value in self.functional_parameter.items():
-            if functional_parameter != bytes(2):
+            if value != bytes(2):
                 functional_parameter += "%s: %s, " % (
                     str(key),
                     str(value),

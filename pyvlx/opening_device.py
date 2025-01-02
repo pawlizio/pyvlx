@@ -67,7 +67,7 @@ class OpeningDevice(Node):
     async def set_position(
         self,
         position: Position,
-        velocity: Velocity | int | None = Velocity.SILENT,
+        velocity: Velocity | int | None = Velocity.FAST,
         wait_for_completion: bool = True,
     ) -> None:
         """Set opening device to desired position.
@@ -99,7 +99,7 @@ class OpeningDevice(Node):
             wait_for_completion=wait_for_completion,
             node_id=self.node_id,
             parameter=position,
-            functional_parameter=kwargs,
+            **kwargs,
         )
         await command.send()
         await self.after_update()
