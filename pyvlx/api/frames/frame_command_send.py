@@ -101,10 +101,11 @@ class FrameCommandSendRequest(FrameBase):
         """Return human readable string."""
         functional_parameter = ""
         for key, value in self.functional_parameter.items():
-            functional_parameter += "%s: %s, " % (
-                str(key),
-                str(value),
-            )
+            if functional_parameter != bytes(2):
+                functional_parameter += "%s: %s, " % (
+                    str(key),
+                    str(value),
+                )
         return (
             '<{} node_ids="{}" active_parameter="{}" parameter="{}" functional_parameter="{}" '
             'session_id="{}" originator="{}"/>'.format(

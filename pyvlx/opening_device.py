@@ -86,14 +86,11 @@ class OpeningDevice(Node):
         # ) and self.use_default_velocity:
         #     velocity = self.default_velocity
 
-        # if isinstance(velocity, Velocity):
-        #     if velocity is not Velocity.DEFAULT:
-        #         if velocity is Velocity.SILENT:
-        #             kwargs["fp1"] = Parameter(raw=b"\x00\x00")
-        #         else:
-        #             kwargs["fp1"] = Parameter(raw=b"\xC8\x00")
-        # elif isinstance(velocity, int):
-        kwargs["fp1"] = 1
+        if isinstance(velocity, Velocity):
+            if velocity is not Velocity.DEFAULT:
+                kwargs["fp1"] = Position.from_percent(velocity.value)
+        elif isinstance(velocity, int):
+            kwargs["fp1"] = Position.from_percent(velocity)
 
         PYVLXLOG.debug("Velocity kwargs: %s", kwargs["fp1"])
 
