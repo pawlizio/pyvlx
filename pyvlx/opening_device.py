@@ -80,19 +80,19 @@ class OpeningDevice(Node):
         """
         kwargs: Any = {}
 
-        if (
-            velocity is None or velocity is Velocity.DEFAULT
-        ) and not self.use_default_velocity:
-            velocity = self.default_velocity
+        # if (
+        #     velocity is None or velocity is Velocity.DEFAULT
+        # ) and not self.use_default_velocity:
+        #     velocity = self.default_velocity
 
-        if isinstance(velocity, Velocity):
-            if velocity is not Velocity.DEFAULT:
-                if velocity is Velocity.SILENT:
-                    kwargs["fp1"] = Parameter(raw=b"\x00\x00")
-                else:
-                    kwargs["fp1"] = Parameter(raw=b"\xC8\x00")
-        elif isinstance(velocity, int):
-            kwargs["fp1"] = Position.from_percent(velocity)
+        # if isinstance(velocity, Velocity):
+        #     if velocity is not Velocity.DEFAULT:
+        #         if velocity is Velocity.SILENT:
+        #             kwargs["fp1"] = Parameter(raw=b"\x00\x00")
+        #         else:
+        #             kwargs["fp1"] = Parameter(raw=b"\xC8\x00")
+        # elif isinstance(velocity, int):
+        kwargs["fp1"] = self.default_velocity
 
         command = CommandSend(
             pyvlx=self.pyvlx,

@@ -21,6 +21,9 @@ from .node_updater import NodeUpdater
 from .nodes import Nodes
 from .scenes import Scenes
 
+# Read the version information at the start
+PYVLX_VERSION = version("pyvlx")
+
 
 class PyVLX:
     """Class for PyVLX."""
@@ -48,7 +51,7 @@ class PyVLX:
         self.connection.register_frame_received_cb(self.node_updater.process_frame)
 
         self.scenes = Scenes(self)
-        self.version = version("pyvlx")
+        self.version = PYVLX_VERSION
         self.protocol_version = None
         self.klf200 = Klf200Gateway(pyvlx=self)
         self.api_call_semaphore = asyncio.Semaphore(1)  # Limit parallel commands
