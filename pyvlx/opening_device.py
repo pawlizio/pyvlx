@@ -66,7 +66,7 @@ class OpeningDevice(Node):
     async def set_position(
         self,
         position: Position,
-        velocity: Velocity | int | None = Velocity.DEFAULT,
+        velocity: Velocity | int | None = Velocity.SILENT,
         wait_for_completion: bool = True,
     ) -> None:
         """Set opening device to desired position.
@@ -92,7 +92,8 @@ class OpeningDevice(Node):
         #         else:
         #             kwargs["fp1"] = Parameter(raw=b"\xC8\x00")
         # elif isinstance(velocity, int):
-        kwargs["fp1"] = Velocity.SILENT
+        
+        kwargs["fp1"] = Parameter.from_percent(velocity)
 
         command = CommandSend(
             pyvlx=self.pyvlx,
