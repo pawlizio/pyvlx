@@ -6,6 +6,7 @@ a VELUX KLF 200 device for controlling window openers
 and roller shutters.
 """
 import asyncio
+import pkg_resources
 from typing import Optional
 
 from .api import get_limitation
@@ -47,14 +48,14 @@ class PyVLX:
         self.connection.register_frame_received_cb(self.node_updater.process_frame)
 
         self.scenes = Scenes(self)
-        self.version = None
+        self.version = pkg_resources.require("pyvlx")[0].version
         self.protocol_version = None
         self.klf200 = Klf200Gateway(pyvlx=self)
         self.api_call_semaphore = asyncio.Semaphore(1)  # Limit parallel commands
 
     async def connect(self) -> None:
         """Connect to KLF 200."""
-        PYVLXLOG.debug("Connecting to KLF 200")
+        PYVLXLOG.debug("Connecting to KLF 200 using pyvlx version: %s", self.version)
         await self.connection.connect()
         assert self.config.password is not None
         await self.klf200.password_enter(password=self.config.password)
