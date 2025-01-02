@@ -92,8 +92,7 @@ class OpeningDevice(Node):
         #         else:
         #             kwargs["fp1"] = Parameter(raw=b"\xC8\x00")
         # elif isinstance(velocity, int):
-        
-        kwargs["fp1"] = Parameter.from_percent(velocity)
+        kwargs["fp1"] = Velocity.SILENT.value
 
         command = CommandSend(
             pyvlx=self.pyvlx,
