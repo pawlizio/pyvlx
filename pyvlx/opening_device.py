@@ -49,7 +49,7 @@ class OpeningDevice(Node):
         self.state_received_at: Optional[datetime.datetime] = None
         self.estimated_completion: Optional[datetime.datetime] = None
         self.use_default_velocity: bool = False
-        self.default_velocity: Velocity = Velocity.SILENT
+        self.default_velocity: Velocity = Velocity.DEFAULT
         self.open_position_target: int = 0
         self.close_position_target: int = 100
         self._update_task: Task | None = None
@@ -82,7 +82,7 @@ class OpeningDevice(Node):
 
         # if (
         #     velocity is None or velocity is Velocity.DEFAULT
-        # ) and not self.use_default_velocity:
+        # ) and self.use_default_velocity:
         #     velocity = self.default_velocity
 
         # if isinstance(velocity, Velocity):
@@ -92,7 +92,7 @@ class OpeningDevice(Node):
         #         else:
         #             kwargs["fp1"] = Parameter(raw=b"\xC8\x00")
         # elif isinstance(velocity, int):
-        kwargs["fp1"] = self.default_velocity
+        kwargs["fp1"] = Velocity.SILENT
 
         command = CommandSend(
             pyvlx=self.pyvlx,
