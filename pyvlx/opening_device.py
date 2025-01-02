@@ -4,6 +4,7 @@ import datetime
 from asyncio import Task
 from typing import TYPE_CHECKING, Any, Optional
 
+from .log import PYVLXLOG
 from .api.command_send import CommandSend
 from .api.get_limitation import GetLimitation
 from .const import Velocity
@@ -92,7 +93,9 @@ class OpeningDevice(Node):
         #         else:
         #             kwargs["fp1"] = Parameter(raw=b"\xC8\x00")
         # elif isinstance(velocity, int):
-        kwargs["fp1"] = Position.from_percent(Velocity.SILENT.value)
+        kwargs["fp1"] = 1
+
+        PYVLXLOG.debug("Velocity kwargs: %s", kwargs["fp1"])
 
         command = CommandSend(
             pyvlx=self.pyvlx,
