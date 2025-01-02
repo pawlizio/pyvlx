@@ -103,7 +103,7 @@ class FrameCommandSendRequest(FrameBase):
         for key, value in self.functional_parameter.items():
             functional_parameter += "%s: %s, " % (
                 str(key),
-                Position(Parameter(bytes(value))),
+                str(value),
             )
         return (
             '<{} node_ids="{}" active_parameter="{}" parameter="{}" functional_parameter="{}" '
