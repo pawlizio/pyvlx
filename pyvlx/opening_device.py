@@ -82,7 +82,7 @@ class OpeningDevice(Node):
 
         if (
             velocity is None or velocity is Velocity.DEFAULT
-        ) and self.use_default_velocity:
+        ) and not self.use_default_velocity:
             velocity = self.default_velocity
 
         if isinstance(velocity, Velocity):
