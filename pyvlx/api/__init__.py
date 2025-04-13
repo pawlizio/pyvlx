@@ -13,6 +13,7 @@ from .get_node_information import GetNodeInformation
 from .get_protocol_version import GetProtocolVersion
 from .get_scene_list import GetSceneList
 from .get_state import GetState
+from .get_systemtable_data import GetSystemtableData
 from .get_version import GetVersion
 from .house_status_monitor import (
     HouseStatusMonitorDisable, HouseStatusMonitorEnable)

@@ -60,6 +60,7 @@ class TCPTransport(asyncio.Protocol):
             assert raw is not None
 
             try:
+                PYVLXLOG.debug("Received: " + ":".join("{:02x}".format(c) for c in raw))
                 frame = frame_from_raw(raw)
                 if frame is not None:
                     self.frame_received_cb(frame)

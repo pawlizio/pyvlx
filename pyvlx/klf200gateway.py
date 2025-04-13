@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, Awaitable, Callable, List, Optional
 
 from .api import (
     FactoryDefault, GetLocalTime, GetNetworkSetup, GetProtocolVersion,
-    GetState, GetVersion, HouseStatusMonitorDisable, HouseStatusMonitorEnable,
+    GetState, GetSystemtableData, GetVersion, HouseStatusMonitorDisable, HouseStatusMonitorEnable,
     LeaveLearnState, PasswordEnter, Reboot, SetUTC)
 from .dataobjects import (
     DtoLocalTime, DtoNetworkSetup, DtoProtocolVersion, DtoState, DtoVersion)
@@ -44,6 +44,14 @@ class Klf200Gateway:
         for device_updated_cb in self.device_updated_cbs:
             # pylint: disable=not-callable
             await device_updated_cb(self)
+
+    async def get_systemtable_data(self) -> bool:
+        """Retrieve state from API."""
+        systemtable = GetSystemtableData(pyvlx=self.pyvlx)
+        await systemtable.do_api_call()
+        if not systemtable.success:
+            raise PyVLXException("Unable to retrieve state")
+        return systemtable.success
 
     async def get_state(self) -> bool:
         """Retrieve state from API."""

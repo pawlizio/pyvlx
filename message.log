@@ -1,0 +1,747 @@
+2025-02-19 18:19:49,940: DEBUG: Using proactor: IocpProactor
+2025-02-19 18:19:49,941: DEBUG: Heartbeat __init__
+2025-02-19 18:19:54,159: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 18:19:54,159: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 18:19:54,159: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 18:19:54,169: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 18:19:54,170: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 18:19:54,379: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 18:19:54,382: DEBUG: REC: <FrameGetSystemTableDataNotification payload="b'\n\x00^k\xfc\x00\x80\xcc\x02^k\xfc\x01\x91\xb8$\x00\x80\xcc\x02\x91\xb8$\x02\xea?\xc3\x04@\xcc\x02\xea?\xc3\x03\xf1\xa6J\x04@\xcc\x02\xf1\xa6J\x04\xe50C\x00\x80\xcc\x02\xe50C\x05W\x15\xee\x04@\xcc\x02W\x15\xee\x06\xfdG\x07\x00\x80\xcc\x02\xfdG\x07\x07\x02)O\x00\x80\xcc\x02\x02)O\x08\x1f\x8b\xac\x00\x80\xcc\x02\x1f\x8b\xac\t\x86k5\x00\x80\xcc\x02\x86k5\x01'" "/>
+2025-02-19 18:19:54,382: DEBUG: TCP transport closed.
+2025-02-19 18:19:54,390: DEBUG: TCP transport closed.
+2025-02-19 18:23:01,463: DEBUG: Using proactor: IocpProactor
+2025-02-19 18:23:01,463: DEBUG: Heartbeat __init__
+2025-02-19 18:23:05,622: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 18:23:05,622: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 18:23:05,622: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 18:23:05,633: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 18:23:05,633: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 18:23:05,845: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 18:23:05,848: WARNING: Command Command.GW_CS_GET_SYSTEMTABLE_DATA_NTF not implemented, raw: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 18:23:05,849: WARNING: Command Command.GW_CS_GET_SYSTEMTABLE_DATA_NTF not implemented, raw: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-02-19 18:23:12,882: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-12-21 16:15:12"/>
+2025-02-19 18:23:12,882: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-12-21 16:15:12"/>
+2025-02-19 18:23:13,660: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-12-22 10:27:28"/>
+2025-02-19 18:23:13,660: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-12-22 10:27:28"/>
+2025-02-19 18:23:14,394: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="2" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-12-23 04:39:44"/>
+2025-02-19 18:23:14,395: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="2" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-12-23 04:39:44"/>
+2025-02-19 18:23:15,100: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-12-23 04:39:44"/>
+2025-02-19 18:23:15,100: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-12-23 04:39:44"/>
+2025-02-19 18:36:11,113: DEBUG: Using proactor: IocpProactor
+2025-02-19 18:36:11,115: DEBUG: Heartbeat __init__
+2025-02-19 18:36:15,372: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 18:36:15,373: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 18:36:15,373: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 18:36:15,380: DEBUG: Recieved: b'\x00\x040\x01\x005'
+2025-02-19 18:36:15,380: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 18:36:15,381: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 18:36:15,591: DEBUG: Recieved: b'\x00\x03\x01\x01\x03'
+2025-02-19 18:36:15,592: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 18:36:15,596: DEBUG: Recieved: b'\x00s\x01\x02\n\x00^k\xfc\x00\x80\xcc\x02^k\xfc\x01\x91\xb8$\x00\x80\xcc\x02\x91\xb8$\x02\xea?\xc3\x04@\xcc\x02\xea?\xc3\x03\xf1\xa6J\x04@\xcc\x02\xf1\xa6J\x04\xe50C\x00\x80\xcc\x02\xe50C\x05W\x15\xee\x04@\xcc\x02W\x15\xee\x06\xfdG\x07\x00\x80\xcc\x02\xfdG\x07\x07\x02)O\x00\x80\xcc\x02\x02)O\x08\x1f\x8b\xac\x00\x80\xcc\x02\x1f\x8b\xac\t\x86k5\x00\x80\xcc\x02\x86k5\x01\xbe'
+2025-02-19 18:36:15,596: DEBUG: REC: <FrameGetSystemTableDataNotification payload="b'\n\x00^k\xfc\x00\x80\xcc\x02^k\xfc\x01\x91\xb8$\x00\x80\xcc\x02\x91\xb8$\x02\xea?\xc3\x04@\xcc\x02\xea?\xc3\x03\xf1\xa6J\x04@\xcc\x02\xf1\xa6J\x04\xe50C\x00\x80\xcc\x02\xe50C\x05W\x15\xee\x04@\xcc\x02W\x15\xee\x06\xfdG\x07\x00\x80\xcc\x02\xfdG\x07\x07\x02)O\x00\x80\xcc\x02\x02)O\x08\x1f\x8b\xac\x00\x80\xcc\x02\x1f\x8b\xac\t\x86k5\x00\x80\xcc\x02\x86k5\x01'" "/>
+2025-02-19 18:36:15,597: DEBUG: Recieved: b'\x00\x10\x01\x02\x01\nAB\xba\x04@\xcc\x02AB\xba\x00\x92'
+2025-02-19 18:36:15,597: DEBUG: REC: <FrameGetSystemTableDataNotification payload="b'\x01\nAB\xba\x04@\xcc\x02AB\xba\x00'" "/>
+2025-02-19 18:36:25,389: DEBUG: TCP transport closed.
+2025-02-19 18:36:25,397: DEBUG: TCP transport closed.
+2025-02-19 18:38:16,761: DEBUG: Using proactor: IocpProactor
+2025-02-19 18:38:16,762: DEBUG: Heartbeat __init__
+2025-02-19 18:38:20,922: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 18:38:20,922: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 18:38:20,922: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 18:38:20,929: DEBUG: Recieved: b'\x00\x040\x01\x005'
+2025-02-19 18:38:20,929: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 18:38:20,929: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 18:38:21,144: DEBUG: Recieved: b'\x00\x03\x01\x01\x03'
+2025-02-19 18:38:21,144: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 18:38:21,148: DEBUG: Recieved: b'\x00s\x01\x02\n\x00^k\xfc\x00\x80\xcc\x02^k\xfc\x01\x91\xb8$\x00\x80\xcc\x02\x91\xb8$\x02\xea?\xc3\x04@\xcc\x02\xea?\xc3\x03\xf1\xa6J\x04@\xcc\x02\xf1\xa6J\x04\xe50C\x00\x80\xcc\x02\xe50C\x05W\x15\xee\x04@\xcc\x02W\x15\xee\x06\xfdG\x07\x00\x80\xcc\x02\xfdG\x07\x07\x02)O\x00\x80\xcc\x02\x02)O\x08\x1f\x8b\xac\x00\x80\xcc\x02\x1f\x8b\xac\t\x86k5\x00\x80\xcc\x02\x86k5\x01\xbe'
+2025-02-19 18:38:21,148: DEBUG: REC: <FrameGetSystemTableDataNotification payload="b'\n\x00^k\xfc\x00\x80\xcc\x02^k\xfc\x01\x91\xb8$\x00\x80\xcc\x02\x91\xb8$\x02\xea?\xc3\x04@\xcc\x02\xea?\xc3\x03\xf1\xa6J\x04@\xcc\x02\xf1\xa6J\x04\xe50C\x00\x80\xcc\x02\xe50C\x05W\x15\xee\x04@\xcc\x02W\x15\xee\x06\xfdG\x07\x00\x80\xcc\x02\xfdG\x07\x07\x02)O\x00\x80\xcc\x02\x02)O\x08\x1f\x8b\xac\x00\x80\xcc\x02\x1f\x8b\xac\t\x86k5\x00\x80\xcc\x02\x86k5\x01'" "/>
+2025-02-19 18:38:21,149: DEBUG: Recieved: b'\x00\x10\x01\x02\x01\nAB\xba\x04@\xcc\x02AB\xba\x00\x92'
+2025-02-19 18:38:21,149: DEBUG: REC: <FrameGetSystemTableDataNotification payload="b'\x01\nAB\xba\x04@\xcc\x02AB\xba\x00'" "/>
+2025-02-19 18:38:30,929: DEBUG: TCP transport closed.
+2025-02-19 18:38:30,937: DEBUG: TCP transport closed.
+2025-02-19 18:42:11,274: DEBUG: Using proactor: IocpProactor
+2025-02-19 18:42:11,275: DEBUG: Heartbeat __init__
+2025-02-19 18:42:15,499: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 18:42:15,499: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 18:42:15,499: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 18:42:15,509: DEBUG: Recieved: b'\x00\x040\x01\x005'
+2025-02-19 18:42:15,509: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 18:42:15,509: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 18:42:15,721: DEBUG: Recieved: b'\x00\x03\x01\x01\x03'
+2025-02-19 18:42:15,721: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 18:42:15,725: DEBUG: Recieved: b'\x00s\x01\x02\n\x00^k\xfc\x00\x80\xcc\x02^k\xfc\x01\x91\xb8$\x00\x80\xcc\x02\x91\xb8$\x02\xea?\xc3\x04@\xcc\x02\xea?\xc3\x03\xf1\xa6J\x04@\xcc\x02\xf1\xa6J\x04\xe50C\x00\x80\xcc\x02\xe50C\x05W\x15\xee\x04@\xcc\x02W\x15\xee\x06\xfdG\x07\x00\x80\xcc\x02\xfdG\x07\x07\x02)O\x00\x80\xcc\x02\x02)O\x08\x1f\x8b\xac\x00\x80\xcc\x02\x1f\x8b\xac\t\x86k5\x00\x80\xcc\x02\x86k5\x01\xbe'
+2025-02-19 18:42:15,725: DEBUG: REC: <FrameGetSystemTableDataNotification payload="b'\n\x00^k\xfc\x00\x80\xcc\x02^k\xfc\x01\x91\xb8$\x00\x80\xcc\x02\x91\xb8$\x02\xea?\xc3\x04@\xcc\x02\xea?\xc3\x03\xf1\xa6J\x04@\xcc\x02\xf1\xa6J\x04\xe50C\x00\x80\xcc\x02\xe50C\x05W\x15\xee\x04@\xcc\x02W\x15\xee\x06\xfdG\x07\x00\x80\xcc\x02\xfdG\x07\x07\x02)O\x00\x80\xcc\x02\x02)O\x08\x1f\x8b\xac\x00\x80\xcc\x02\x1f\x8b\xac\t\x86k5\x00\x80\xcc\x02\x86k5\x01'" "/>
+2025-02-19 18:42:15,726: DEBUG: Recieved: b'\x00\x10\x01\x02\x01\nAB\xba\x04@\xcc\x02AB\xba\x00\x92'
+2025-02-19 18:42:15,726: DEBUG: REC: <FrameGetSystemTableDataNotification payload="b'\x01\nAB\xba\x04@\xcc\x02AB\xba\x00'" "/>
+2025-02-19 18:42:24,441: DEBUG: Recieved: b'\x00\x17\x02\x11\x00-\x00\x00\x00\x00\xf7\xff\xf7\xff\xf7\xff\xf7\xff\x00\x00\x02`\x00\x00K'
+2025-02-19 18:42:24,441: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="1971-04-07 06:18:08"/>
+2025-02-19 18:42:24,441: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="1971-04-07 06:18:08"/>
+2025-02-19 18:42:25,137: DEBUG: Recieved: b'\x00\x17\x02\x11\x01-\x00\x00\x00\x00\xf7\xff\xf7\xff\xf7\xff\xf7\xff\x00\x00\x02`\x00\x00J'
+2025-02-19 18:42:25,137: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="1971-04-07 06:18:08"/>
+2025-02-19 18:42:25,137: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="1971-04-07 06:18:08"/>
+2025-02-19 18:42:25,514: DEBUG: TCP transport closed.
+2025-02-19 18:42:25,522: DEBUG: TCP transport closed.
+2025-02-19 21:34:23,630: DEBUG: Using proactor: IocpProactor
+2025-02-19 21:34:23,631: DEBUG: Heartbeat __init__
+2025-02-19 21:35:23,666: DEBUG: TCP transport closed.
+2025-02-19 21:35:24,043: DEBUG: Using proactor: IocpProactor
+2025-02-19 21:35:24,044: DEBUG: Heartbeat __init__
+2025-02-19 21:36:24,065: DEBUG: TCP transport closed.
+2025-02-19 21:36:29,863: DEBUG: Using proactor: IocpProactor
+2025-02-19 21:36:29,864: DEBUG: Heartbeat __init__
+2025-02-19 21:36:38,278: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 21:36:38,279: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 21:36:38,279: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 21:36:38,288: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 21:36:38,289: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 21:36:38,511: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 21:36:38,516: ERROR: Fatal error on SSL protocol
+protocol: <asyncio.sslproto.SSLProtocol object at 0x00000252A7FBE2D0>
+transport: <_ProactorSocketTransport closing fd=388>
+Traceback (most recent call last):
+  File "C:\Python\Lib\asyncio\sslproto.py", line 733, in _do_read
+    self._do_read__copied()
+  File "C:\Python\Lib\asyncio\sslproto.py", line 795, in _do_read__copied
+    self._app_protocol.data_received(b''.join(data))
+  File "c:\Development\pyvlx\pyvlx\connection.py", line 63, in data_received
+    frame = frame_from_raw(raw)
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Development\pyvlx\pyvlx\api\frame_creation.py", line 57, in frame_from_raw
+    frame.from_payload(payload)
+  File "c:\Development\pyvlx\pyvlx\api\frames\frame_get_systemtable_data.py", line 47, in from_payload
+    actuator_type=NodeType(data[4:5]),
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python\Lib\enum.py", line 740, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python\Lib\enum.py", line 1154, in __new__
+    raise ve_exc
+ValueError: b'\xfc' is not a valid NodeType
+2025-02-19 21:36:38,531: DEBUG: Socket connection to KLF 200 has been lost
+2025-02-19 21:36:38,531: DEBUG: TCP transport closed.
+2025-02-19 21:36:48,320: DEBUG: TCP transport closed.
+2025-02-19 21:44:30,091: DEBUG: Using proactor: IocpProactor
+2025-02-19 21:44:30,092: DEBUG: Heartbeat __init__
+2025-02-19 21:44:34,347: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 21:44:34,347: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 21:44:34,348: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 21:44:34,354: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 21:44:34,355: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 21:44:34,566: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 21:44:34,569: ERROR: Fatal error on SSL protocol
+protocol: <asyncio.sslproto.SSLProtocol object at 0x000001AEA9F8E480>
+transport: <_ProactorSocketTransport closing fd=364>
+Traceback (most recent call last):
+  File "C:\Python\Lib\asyncio\sslproto.py", line 733, in _do_read
+    self._do_read__copied()
+  File "C:\Python\Lib\asyncio\sslproto.py", line 793, in _do_read__copied
+    self._app_protocol.data_received(first)
+  File "c:\Development\pyvlx\pyvlx\connection.py", line 63, in data_received
+    frame = frame_from_raw(raw)
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Development\pyvlx\pyvlx\api\frame_creation.py", line 57, in frame_from_raw
+    frame.from_payload(payload)
+  File "c:\Development\pyvlx\pyvlx\api\frames\frame_get_systemtable_data.py", line 47, in from_payload
+    actuator_type=NodeType(int.from_bytes(data[4:5], byteorder='big') & 0xFFC0),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python\Lib\enum.py", line 740, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python\Lib\enum.py", line 1154, in __new__
+    raise ve_exc
+ValueError: 192 is not a valid NodeType
+2025-02-19 21:44:34,573: DEBUG: Socket connection to KLF 200 has been lost
+2025-02-19 21:44:34,573: DEBUG: TCP transport closed.
+2025-02-19 21:44:44,380: DEBUG: TCP transport closed.
+2025-02-19 21:49:05,472: DEBUG: Using proactor: IocpProactor
+2025-02-19 21:49:05,473: DEBUG: Heartbeat __init__
+2025-02-19 21:49:09,683: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 21:49:09,683: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 21:49:09,684: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 21:49:09,696: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 21:49:09,696: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 21:49:09,697: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 21:49:09,905: DEBUG: Received: 00:03:01:01:03
+2025-02-19 21:49:09,906: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 21:49:09,911: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 21:49:09,911: ERROR: Fatal error on SSL protocol
+protocol: <asyncio.sslproto.SSLProtocol object at 0x0000023E31BDCDD0>
+transport: <_ProactorSocketTransport closing fd=372>
+Traceback (most recent call last):
+  File "C:\Python\Lib\asyncio\sslproto.py", line 733, in _do_read
+    self._do_read__copied()
+  File "C:\Python\Lib\asyncio\sslproto.py", line 793, in _do_read__copied
+    self._app_protocol.data_received(first)
+  File "c:\Development\pyvlx\pyvlx\connection.py", line 64, in data_received
+    frame = frame_from_raw(raw)
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Development\pyvlx\pyvlx\api\frame_creation.py", line 57, in frame_from_raw
+    frame.from_payload(payload)
+  File "c:\Development\pyvlx\pyvlx\api\frames\frame_get_systemtable_data.py", line 47, in from_payload
+    actuator_type=NodeType(int.from_bytes(data[4:5], byteorder='big') & 0xFFC0),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python\Lib\enum.py", line 740, in __call__
+    return cls.__new__(cls, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python\Lib\enum.py", line 1154, in __new__
+    raise ve_exc
+ValueError: 192 is not a valid NodeType
+2025-02-19 21:49:09,913: DEBUG: Socket connection to KLF 200 has been lost
+2025-02-19 21:49:09,913: DEBUG: TCP transport closed.
+2025-02-19 21:49:19,727: DEBUG: TCP transport closed.
+2025-02-19 21:53:42,119: DEBUG: Using proactor: IocpProactor
+2025-02-19 21:53:42,120: DEBUG: Heartbeat __init__
+2025-02-19 21:53:46,406: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 21:53:46,406: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 21:53:46,406: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 21:53:46,411: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 21:53:46,411: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 21:53:46,412: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 21:53:46,627: DEBUG: Received: 00:03:01:01:03
+2025-02-19 21:53:46,628: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 21:53:46,638: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 21:53:46,638: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="10" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=10, actuator_address=b'\x00^', actuator_type=192, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=False, rf_support=False, actuator_turnaround_time=4, io_manufacturer_id=204, backbone_reference=b'\x02^'), SystemTableObject(index=107, actuator_address=b'\xfc\x01', actuator_type=128, actuator_subtype=36, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=False, rf_support=False, actuator_turnaround_time=0, io_manufacturer_id=128, backbone_reference=b'\xcc\x02'), SystemTableObject(index=145, actuator_address=b'\xb8$', actuator_type=192, actuator_subtype=63, power_save_mode=<PowerMode.LOW_POWER_MODE: 1>, io_membership=False, rf_support=False, actuator_turnaround_time=6, io_manufacturer_id=4, backbone_reference=b'@\xcc'), SystemTableObject(index=2, actuator_address=b'\xea?', actuator_type=0, actuator_subtype=49, power_save_mode=<PowerMode.LOW_POWER_MODE: 1>, io_membership=True, rf_support=False, actuator_turnaround_time=5, io_manufacturer_id=74, backbone_reference=b'\x04@'), SystemTableObject(index=204, actuator_address=b'\x02\xf1', actuator_type=64, actuator_subtype=4, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=False, actuator_turnaround_time=7, io_manufacturer_id=48, backbone_reference=b'C\x00'), SystemTableObject(index=128, actuator_address=b'\xcc\x02', actuator_type=0, actuator_subtype=3, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=False, actuator_turnaround_time=0, io_manufacturer_id=87, backbone_reference=b'\x15\xee'), SystemTableObject(index=4, actuator_address=b'@\xcc', actuator_type=64, actuator_subtype=21, power_save_mode=<PowerMode.LOW_POWER_MODE: 1>, io_membership=True, rf_support=True, actuator_turnaround_time=7, io_manufacturer_id=6, backbone_reference=b'\xfdG'), SystemTableObject(index=7, actuator_address=b'\x00\x80', actuator_type=0, actuator_subtype=61, power_save_mode=<PowerMode.LOW_POWER_MODE: 1>, io_membership=True, rf_support=False, actuator_turnaround_time=2, io_manufacturer_id=7, backbone_reference=b'\x07\x02'), SystemTableObject(index=41, actuator_address=b'O\x00', actuator_type=192, actuator_subtype=2, power_save_mode=<PowerMode.LOW_POWER_MODE: 1>, io_membership=False, rf_support=False, actuator_turnaround_time=0, io_manufacturer_id=41, backbone_reference=b'O\x08'), SystemTableObject(index=31, actuator_address=b'\x8b\xac', actuator_type=128, actuator_subtype=12, power_save_mode=<PowerMode.LOW_POWER_MODE: 1>, io_membership=False, rf_support=False, actuator_turnaround_time=0, io_manufacturer_id=31, backbone_reference=b'\x8b\xac')]"/>
+2025-02-19 21:53:46,638: DEBUG: Received: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-02-19 21:53:46,638: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="1" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=1, actuator_address=b'\nA', actuator_type=128, actuator_subtype=4, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=False, rf_support=False, actuator_turnaround_time=2, io_manufacturer_id=204, backbone_reference=b'\x02A')]"/>
+2025-02-19 21:53:51,852: DEBUG: Received: 00:17:02:11:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:ef:b1:00:00:77
+2025-02-19 21:53:51,852: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-06 12:54:56"/>
+2025-02-19 21:53:51,852: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-06 12:54:56"/>
+2025-02-19 21:53:53,047: DEBUG: Received: 00:17:02:11:01:2d:ad:e0:ad:e0:f7:ff:f7:ff:f7:ff:f7:ff:00:00:ef:b2:00:00:75
+2025-02-19 21:53:53,047: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="87 %" target="87 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-07 07:07:12"/>
+2025-02-19 21:53:53,047: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="87 %" target="87 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-07 07:07:12"/>
+2025-02-19 21:53:53,841: DEBUG: Received: 00:17:02:11:02:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:ef:b3:00:00:77
+2025-02-19 21:53:53,841: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="2" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-08 01:19:28"/>
+2025-02-19 21:53:53,841: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="2" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-08 01:19:28"/>
+2025-02-19 21:53:54,580: DEBUG: Received: 00:17:02:11:03:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:ef:b4:00:00:71
+2025-02-19 21:53:54,580: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-08 19:31:44"/>
+2025-02-19 21:53:54,580: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-08 19:31:44"/>
+2025-02-19 21:53:55,304: DEBUG: Received: 00:17:02:11:04:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:ef:b4:00:00:76
+2025-02-19 21:53:55,304: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="4" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-08 19:31:44"/>
+2025-02-19 21:53:55,304: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="4" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-08 19:31:44"/>
+2025-02-19 21:53:56,023: DEBUG: Received: 00:17:02:11:05:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:ef:b5:00:00:76
+2025-02-19 21:53:56,023: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="5" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-09 13:44:00"/>
+2025-02-19 21:53:56,023: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="5" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2097-06-09 13:44:00"/>
+2025-02-19 21:53:56,426: DEBUG: TCP transport closed.
+2025-02-19 21:53:56,436: DEBUG: TCP transport closed.
+2025-02-19 22:08:39,451: DEBUG: Using proactor: IocpProactor
+2025-02-19 22:08:39,452: DEBUG: Heartbeat __init__
+2025-02-19 22:08:43,648: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 22:08:43,648: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 22:08:43,648: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 22:08:43,663: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 22:08:43,663: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 22:08:43,663: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 22:08:43,746: DEBUG: Received: 00:17:02:11:03:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:f3:2d:00:00:f4
+2025-02-19 22:08:43,746: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2099-04-14 03:16:48"/>
+2025-02-19 22:08:43,746: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2099-04-14 03:16:48"/>
+2025-02-19 22:08:43,954: DEBUG: Received: 00:03:01:01:03
+2025-02-19 22:08:43,954: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 22:08:43,958: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 0a:00:5e:6b:fc:00:80:cc:02:5e
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 6b:fc:01:91:b8:24:00:80:cc:02
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 91:b8:24:02:ea:3f:c3:04:40:cc
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 02:ea:3f:c3:03:f1:a6:4a:04:40
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: cc:02:f1:a6:4a:04:e5:30:43:00
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 80:cc:02:e5:30:43:05:57:15:ee
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 04:40:cc:02:57:15:ee:06:fd:47
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 07:00:80:cc:02:fd:47:07:07:02
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 29:4f:00:80:cc:02:02:29:4f:08
+2025-02-19 22:08:43,958: DEBUG: SystemTableObject: 1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-19 22:08:43,958: ERROR: Fatal error on SSL protocol
+protocol: <asyncio.sslproto.SSLProtocol object at 0x0000024708DDE240>
+transport: <_ProactorSocketTransport closing fd=536>
+Traceback (most recent call last):
+  File "C:\Python\Lib\asyncio\sslproto.py", line 733, in _do_read
+    self._do_read__copied()
+  File "C:\Python\Lib\asyncio\sslproto.py", line 793, in _do_read__copied
+    self._app_protocol.data_received(first)
+  File "c:\Development\pyvlx\pyvlx\connection.py", line 64, in data_received
+    frame = frame_from_raw(raw)
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Development\pyvlx\pyvlx\api\frame_creation.py", line 57, in frame_from_raw
+    frame.from_payload(payload)
+  File "c:\Development\pyvlx\pyvlx\api\frames\frame_get_systemtable_data.py", line 61, in from_payload
+    self.remaining_number_of_entry = payload[self.number_of_objects*10+13]
+                                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range
+2025-02-19 22:08:43,960: DEBUG: Socket connection to KLF 200 has been lost
+2025-02-19 22:08:43,960: DEBUG: TCP transport closed.
+2025-02-19 22:08:53,659: DEBUG: TCP transport closed.
+2025-02-19 22:17:53,795: DEBUG: Using proactor: IocpProactor
+2025-02-19 22:17:53,797: DEBUG: Heartbeat __init__
+2025-02-19 22:17:58,063: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 22:17:58,063: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 22:17:58,063: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 22:17:58,072: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 22:17:58,072: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 22:17:58,072: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 22:17:58,284: DEBUG: Received: 00:03:01:01:03
+2025-02-19 22:17:58,285: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 22:17:58,288: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 22:17:58,288: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b
+2025-02-19 22:17:58,288: DEBUG: SystemTableObject: fc:01:91:b8:24:00:80:cc:02:91
+2025-02-19 22:17:58,288: DEBUG: SystemTableObject: b8:24:02:ea:3f:c3:04:40:cc:02
+2025-02-19 22:17:58,288: DEBUG: SystemTableObject: ea:3f:c3:03:f1:a6:4a:04:40:cc
+2025-02-19 22:17:58,288: DEBUG: SystemTableObject: 02:f1:a6:4a:04:e5:30:43:00:80
+2025-02-19 22:17:58,288: DEBUG: SystemTableObject: cc:02:e5:30:43:05:57:15:ee:04
+2025-02-19 22:17:58,288: DEBUG: SystemTableObject: 40:cc:02:57:15:ee:06:fd:47:07
+2025-02-19 22:17:58,289: DEBUG: SystemTableObject: 00:80:cc:02:fd:47:07:07:02:29
+2025-02-19 22:17:58,289: DEBUG: SystemTableObject: 4f:00:80:cc:02:02:29:4f:08:1f
+2025-02-19 22:17:58,289: DEBUG: SystemTableObject: 8b:ac:00:80:cc:02:1f:8b:ac:09
+2025-02-19 22:17:58,289: ERROR: Fatal error on SSL protocol
+protocol: <asyncio.sslproto.SSLProtocol object at 0x00000252F818C950>
+transport: <_ProactorSocketTransport closing fd=516>
+Traceback (most recent call last):
+  File "C:\Python\Lib\asyncio\sslproto.py", line 733, in _do_read
+    self._do_read__copied()
+  File "C:\Python\Lib\asyncio\sslproto.py", line 795, in _do_read__copied
+    self._app_protocol.data_received(b''.join(data))
+  File "c:\Development\pyvlx\pyvlx\connection.py", line 64, in data_received
+    frame = frame_from_raw(raw)
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Development\pyvlx\pyvlx\api\frame_creation.py", line 57, in frame_from_raw
+    frame.from_payload(payload)
+  File "c:\Development\pyvlx\pyvlx\api\frames\frame_get_systemtable_data.py", line 61, in from_payload
+    self.remaining_number_of_entry = payload[self.number_of_objects*10+12]
+                                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range
+2025-02-19 22:17:58,291: DEBUG: Socket connection to KLF 200 has been lost
+2025-02-19 22:17:58,291: DEBUG: TCP transport closed.
+2025-02-19 22:18:08,084: DEBUG: TCP transport closed.
+2025-02-19 22:24:32,820: DEBUG: Using proactor: IocpProactor
+2025-02-19 22:24:32,821: DEBUG: Heartbeat __init__
+2025-02-19 22:24:37,042: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 22:24:37,042: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 22:24:37,042: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 22:24:37,049: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 22:24:37,050: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 22:24:37,050: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 22:24:37,263: DEBUG: Received: 00:03:01:01:03
+2025-02-19 22:24:37,263: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 22:24:37,266: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 22:24:37,266: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-02-19 22:24:37,266: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-02-19 22:24:37,266: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-02-19 22:24:37,266: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-02-19 22:24:37,266: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-02-19 22:24:37,267: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-02-19 22:24:37,267: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-02-19 22:24:37,267: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-02-19 22:24:37,267: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-19 22:24:37,267: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-02-19 22:24:37,267: ERROR: Fatal error on SSL protocol
+protocol: <asyncio.sslproto.SSLProtocol object at 0x000002570631CDD0>
+transport: <_ProactorSocketTransport closing fd=440>
+Traceback (most recent call last):
+  File "C:\Python\Lib\asyncio\sslproto.py", line 733, in _do_read
+    self._do_read__copied()
+  File "C:\Python\Lib\asyncio\sslproto.py", line 793, in _do_read__copied
+    self._app_protocol.data_received(first)
+  File "c:\Development\pyvlx\pyvlx\connection.py", line 64, in data_received
+    frame = frame_from_raw(raw)
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Development\pyvlx\pyvlx\api\frame_creation.py", line 57, in frame_from_raw
+    frame.from_payload(payload)
+  File "c:\Development\pyvlx\pyvlx\api\frames\frame_get_systemtable_data.py", line 61, in from_payload
+    self.remaining_number_of_entry = payload[self.number_of_objects*11+13]
+                                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range
+2025-02-19 22:24:37,269: DEBUG: Socket connection to KLF 200 has been lost
+2025-02-19 22:24:37,269: DEBUG: TCP transport closed.
+2025-02-19 22:24:47,075: DEBUG: TCP transport closed.
+2025-02-19 22:27:51,260: DEBUG: Using proactor: IocpProactor
+2025-02-19 22:27:51,261: DEBUG: Heartbeat __init__
+2025-02-19 22:27:55,524: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 22:27:55,524: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 22:27:55,524: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 22:27:55,531: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 22:27:55,531: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 22:27:55,531: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 22:27:55,745: DEBUG: Received: 00:03:01:01:03
+2025-02-19 22:27:55,745: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 22:27:55,749: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 22:27:55,749: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-02-19 22:27:55,749: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-02-19 22:27:55,749: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-02-19 22:27:55,749: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-02-19 22:27:55,749: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-02-19 22:27:55,750: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-02-19 22:27:55,750: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-02-19 22:27:55,750: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-02-19 22:27:55,750: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-19 22:27:55,750: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-02-19 22:27:55,750: ERROR: Fatal error on SSL protocol
+protocol: <asyncio.sslproto.SSLProtocol object at 0x0000023AC568CDD0>
+transport: <_ProactorSocketTransport closing fd=388>
+Traceback (most recent call last):
+  File "C:\Python\Lib\asyncio\sslproto.py", line 733, in _do_read
+    self._do_read__copied()
+  File "C:\Python\Lib\asyncio\sslproto.py", line 793, in _do_read__copied
+    self._app_protocol.data_received(first)
+  File "c:\Development\pyvlx\pyvlx\connection.py", line 64, in data_received
+    frame = frame_from_raw(raw)
+            ^^^^^^^^^^^^^^^^^^^
+  File "c:\Development\pyvlx\pyvlx\api\frame_creation.py", line 57, in frame_from_raw
+    frame.from_payload(payload)
+  File "c:\Development\pyvlx\pyvlx\api\frames\frame_get_systemtable_data.py", line 61, in from_payload
+    self.remaining_number_of_entry = payload[self.number_of_objects*11+3]
+                                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: index out of range
+2025-02-19 22:27:55,752: DEBUG: Socket connection to KLF 200 has been lost
+2025-02-19 22:27:55,752: DEBUG: TCP transport closed.
+2025-02-19 22:28:05,554: DEBUG: TCP transport closed.
+2025-02-19 22:30:21,839: DEBUG: Using proactor: IocpProactor
+2025-02-19 22:30:21,841: DEBUG: Heartbeat __init__
+2025-02-19 22:30:26,060: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 22:30:26,060: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 22:30:26,060: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 22:30:26,067: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 22:30:26,067: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 22:30:26,067: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 22:30:26,280: DEBUG: Received: 00:03:01:01:03
+2025-02-19 22:30:26,280: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 22:30:26,284: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 22:30:26,284: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-02-19 22:30:26,284: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-02-19 22:30:26,285: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-02-19 22:30:26,285: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-02-19 22:30:26,285: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-02-19 22:30:26,285: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-02-19 22:30:26,285: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-02-19 22:30:26,285: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-02-19 22:30:26,285: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-19 22:30:26,285: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-02-19 22:30:26,285: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="10" remaining_number_of_entry="1" system_table_objects="[SystemTableObject(index=0, actuator_address=b'^k', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'^k'), SystemTableObject(index=1, actuator_address=b'\x91\xb8', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x91\xb8'), SystemTableObject(index=2, actuator_address=b'\xea?', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xea?'), SystemTableObject(index=3, actuator_address=b'\xf1\xa6', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xf1\xa6'), SystemTableObject(index=4, actuator_address=b'\xe50', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xe50'), SystemTableObject(index=5, actuator_address=b'W\x15', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'W\x15'), SystemTableObject(index=6, actuator_address=b'\xfdG', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xfdG'), SystemTableObject(index=7, actuator_address=b'\x02)', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x02)'), SystemTableObject(index=8, actuator_address=b'\x1f\x8b', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x1f\x8b'), SystemTableObject(index=9, actuator_address=b'\x86k', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x86k')]"/>
+2025-02-19 22:30:26,286: DEBUG: Received: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-02-19 22:30:26,286: DEBUG: SystemTableObject: 0a:41:42:ba:04:40:cc:02:41:42:ba
+2025-02-19 22:30:26,286: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="1" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=10, actuator_address=b'AB', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'AB')]"/>
+2025-02-19 22:30:36,079: DEBUG: TCP transport closed.
+2025-02-19 22:30:36,090: DEBUG: TCP transport closed.
+2025-02-19 22:34:45,084: DEBUG: Using proactor: IocpProactor
+2025-02-19 22:34:45,086: DEBUG: Heartbeat __init__
+2025-02-19 22:34:49,355: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 22:34:49,355: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 22:34:49,355: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 22:34:49,364: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 22:34:49,364: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 22:34:49,364: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 22:34:49,574: DEBUG: Received: 00:03:01:01:03
+2025-02-19 22:34:49,574: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 22:34:49,579: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 22:34:49,579: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-02-19 22:34:49,579: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-02-19 22:34:49,579: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-02-19 22:34:49,580: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-02-19 22:34:49,580: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-02-19 22:34:49,580: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-02-19 22:34:49,580: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-02-19 22:34:49,580: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-02-19 22:34:49,580: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-19 22:34:49,580: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-02-19 22:34:49,580: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="10" remaining_number_of_entry="1" system_table_objects="[SystemTableObject(index=0, actuator_address=b'^k', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'^k'), SystemTableObject(index=1, actuator_address=b'\x91\xb8', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x91\xb8'), SystemTableObject(index=2, actuator_address=b'\xea?', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xea?'), SystemTableObject(index=3, actuator_address=b'\xf1\xa6', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xf1\xa6'), SystemTableObject(index=4, actuator_address=b'\xe50', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xe50'), SystemTableObject(index=5, actuator_address=b'W\x15', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'W\x15'), SystemTableObject(index=6, actuator_address=b'\xfdG', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xfdG'), SystemTableObject(index=7, actuator_address=b'\x02)', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x02)'), SystemTableObject(index=8, actuator_address=b'\x1f\x8b', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x1f\x8b'), SystemTableObject(index=9, actuator_address=b'\x86k', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x86k')]"/>
+2025-02-19 22:34:49,580: DEBUG: Received: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-02-19 22:34:49,580: DEBUG: SystemTableObject: 0a:41:42:ba:04:40:cc:02:41:42:ba
+2025-02-19 22:34:49,580: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="1" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=10, actuator_address=b'AB', actuator_type=0, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'AB')]"/>
+2025-02-19 22:34:59,376: DEBUG: TCP transport closed.
+2025-02-19 22:34:59,384: DEBUG: TCP transport closed.
+2025-02-19 22:49:12,985: DEBUG: Using proactor: IocpProactor
+2025-02-19 22:49:12,986: DEBUG: Heartbeat __init__
+2025-02-19 22:49:17,192: DEBUG: Socket connection to KLF 200 opened
+2025-02-19 22:49:17,193: DEBUG: Amount of connections since last HA start: 1
+2025-02-19 22:49:17,193: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-19 22:49:17,200: DEBUG: Received: 00:04:30:01:00:35
+2025-02-19 22:49:17,200: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-19 22:49:17,200: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-19 22:49:17,414: DEBUG: Received: 00:03:01:01:03
+2025-02-19 22:49:17,415: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-19 22:49:17,419: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-19 22:49:17,419: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-02-19 22:49:17,419: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-02-19 22:49:17,419: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-02-19 22:49:17,419: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-02-19 22:49:17,419: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-02-19 22:49:17,420: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-02-19 22:49:17,420: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-02-19 22:49:17,420: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-02-19 22:49:17,420: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-19 22:49:17,420: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-02-19 22:49:17,420: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="10" remaining_number_of_entry="1" system_table_objects="[SystemTableObject(index=0, actuator_address=b'^k', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'^k'), SystemTableObject(index=1, actuator_address=b'\x91\xb8', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x91\xb8'), SystemTableObject(index=2, actuator_address=b'\xea?', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xea?'), SystemTableObject(index=3, actuator_address=b'\xf1\xa6', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xf1\xa6'), SystemTableObject(index=4, actuator_address=b'\xe50', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xe50'), SystemTableObject(index=5, actuator_address=b'W\x15', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'W\x15'), SystemTableObject(index=6, actuator_address=b'\xfdG', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\xfdG'), SystemTableObject(index=7, actuator_address=b'\x02)', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x02)'), SystemTableObject(index=8, actuator_address=b'\x1f\x8b', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x1f\x8b'), SystemTableObject(index=9, actuator_address=b'\x86k', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'\x86k')]"/>
+2025-02-19 22:49:17,420: DEBUG: Received: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-02-19 22:49:17,420: DEBUG: SystemTableObject: 0a:41:42:ba:04:40:cc:02:41:42:ba
+2025-02-19 22:49:17,420: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="1" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=10, actuator_address=b'AB', actuator_type=<NodeType.NO_TYPE: 0>, actuator_subtype=0, power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference=b'AB')]"/>
+2025-02-19 22:49:20,603: DEBUG: Received: 00:17:02:11:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b2:00:00:67
+2025-02-19 22:49:20,603: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-06 15:30:40"/>
+2025-02-19 22:49:20,603: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-06 15:30:40"/>
+2025-02-19 22:49:21,685: DEBUG: Received: 00:17:02:11:01:2d:ad:e0:ad:e0:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b3:00:00:67
+2025-02-19 22:49:21,685: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="87 %" target="87 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-07 09:42:56"/>
+2025-02-19 22:49:21,686: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="87 %" target="87 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-07 09:42:56"/>
+2025-02-19 22:49:22,428: DEBUG: Received: 00:17:02:11:02:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b3:00:00:64
+2025-02-19 22:49:22,428: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="2" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-07 09:42:56"/>
+2025-02-19 22:49:22,428: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="2" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-07 09:42:56"/>
+2025-02-19 22:49:23,144: DEBUG: Received: 00:17:02:11:03:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b4:00:00:62
+2025-02-19 22:49:23,144: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-08 03:55:12"/>
+2025-02-19 22:49:23,144: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-08 03:55:12"/>
+2025-02-19 22:49:23,900: DEBUG: Received: 00:17:02:11:04:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b5:00:00:64
+2025-02-19 22:49:23,900: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="4" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-08 22:07:28"/>
+2025-02-19 22:49:23,901: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="4" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-08 22:07:28"/>
+2025-02-19 22:49:24,633: DEBUG: Received: 00:17:02:11:05:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b6:00:00:66
+2025-02-19 22:49:24,634: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="5" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-09 16:19:44"/>
+2025-02-19 22:49:24,634: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="5" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-09 16:19:44"/>
+2025-02-19 22:49:25,331: DEBUG: Received: 00:17:02:11:06:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b6:00:00:65
+2025-02-19 22:49:25,331: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="6" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-09 16:19:44"/>
+2025-02-19 22:49:25,331: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="6" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-09 16:19:44"/>
+2025-02-19 22:49:26,037: DEBUG: Received: 00:17:02:11:07:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b7:00:00:65
+2025-02-19 22:49:26,038: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="7" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-10 10:32:00"/>
+2025-02-19 22:49:26,038: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="7" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-10 10:32:00"/>
+2025-02-19 22:49:26,919: DEBUG: Received: 00:17:02:11:08:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:fc:b8:00:00:65
+2025-02-19 22:49:26,920: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="8" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-11 04:44:16"/>
+2025-02-19 22:49:26,920: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="8" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2104-05-11 04:44:16"/>
+2025-02-19 22:49:27,210: DEBUG: TCP transport closed.
+2025-02-19 22:49:27,218: DEBUG: TCP transport closed.
+2025-02-20 13:35:26,859: DEBUG: Using proactor: IocpProactor
+2025-02-20 13:35:26,862: DEBUG: Heartbeat __init__
+2025-02-20 13:35:31,170: DEBUG: Socket connection to KLF 200 opened
+2025-02-20 13:35:31,170: DEBUG: Amount of connections since last HA start: 1
+2025-02-20 13:35:31,170: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-20 13:35:31,177: DEBUG: Received: 00:04:30:01:00:35
+2025-02-20 13:35:31,177: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-20 13:35:31,177: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-20 13:35:31,386: DEBUG: Received: 00:03:01:01:03
+2025-02-20 13:35:31,386: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-20 13:35:31,390: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-20 13:35:31,391: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-02-20 13:35:31,391: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="10" remaining_number_of_entry="1" system_table_objects="[SystemTableObject(index=0, actuator_address="b'^k\\xfc'", actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'^k\\xfc'"), SystemTableObject(index=1, actuator_address="b'\\x91\\xb8$'", actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'\\x91\\xb8$'"), SystemTableObject(index=2, actuator_address="b'\\xea?\\xc3'", actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'\\xea?\\xc3'"), SystemTableObject(index=3, actuator_address="b'\\xf1\\xa6J'", actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'\\xf1\\xa6J'"), SystemTableObject(index=4, actuator_address="b'\\xe50C'", actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'\\xe50C'"), SystemTableObject(index=5, actuator_address="b'W\\x15\\xee'", actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'W\\x15\\xee'"), SystemTableObject(index=6, actuator_address="b'\\xfdG\\x07'", actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'\\xfdG\\x07'"), SystemTableObject(index=7, actuator_address="b'\\x02)O'", actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'\\x02)O'"), SystemTableObject(index=8, actuator_address="b'\\x1f\\x8b\\xac'", actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'\\x1f\\x8b\\xac'"), SystemTableObject(index=9, actuator_address="b'\\x86k5'", actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'\\x86k5'")]"/>
+2025-02-20 13:35:31,397: DEBUG: Received: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-02-20 13:35:31,397: DEBUG: SystemTableObject: 0a:41:42:ba:04:40:cc:02:41:42:ba
+2025-02-20 13:35:31,397: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="1" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=10, actuator_address="b'AB\\xba'", actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference="b'AB\\xba'")]"/>
+2025-02-20 13:35:31,875: DEBUG: Received: 00:17:02:11:07:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:cc:66:00:00:84
+2025-02-20 13:35:31,876: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="7" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2078-09-01 07:45:36"/>
+2025-02-20 13:35:31,876: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="7" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2078-09-01 07:45:36"/>
+2025-02-20 13:35:32,568: DEBUG: Received: 00:17:02:11:08:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:cc:67:00:00:8a
+2025-02-20 13:35:32,568: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="8" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2078-09-02 01:57:52"/>
+2025-02-20 13:35:32,568: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="8" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2078-09-02 01:57:52"/>
+2025-02-20 13:35:33,263: DEBUG: Received: 00:17:02:11:09:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:cc:68:00:00:84
+2025-02-20 13:35:33,263: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="9" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2078-09-02 20:10:08"/>
+2025-02-20 13:35:33,263: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="9" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2078-09-02 20:10:08"/>
+2025-02-20 13:35:33,971: DEBUG: Received: 00:17:02:11:0a:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:cc:68:00:00:87
+2025-02-20 13:35:33,971: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="10" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2078-09-02 20:10:08"/>
+2025-02-20 13:35:33,971: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="10" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2078-09-02 20:10:08"/>
+2025-02-20 13:35:41,192: DEBUG: TCP transport closed.
+2025-02-20 13:35:41,201: DEBUG: TCP transport closed.
+2025-02-20 13:38:14,713: DEBUG: Using proactor: IocpProactor
+2025-02-20 13:38:14,714: DEBUG: Heartbeat __init__
+2025-02-20 13:38:18,921: DEBUG: Socket connection to KLF 200 opened
+2025-02-20 13:38:18,921: DEBUG: Amount of connections since last HA start: 1
+2025-02-20 13:38:18,921: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-20 13:38:18,930: DEBUG: Received: 00:04:30:01:00:35
+2025-02-20 13:38:18,930: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-20 13:38:18,930: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-20 13:38:19,144: DEBUG: Received: 00:03:01:01:03
+2025-02-20 13:38:19,144: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-20 13:38:19,146: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-20 13:38:19,147: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-02-20 13:38:19,147: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="10" remaining_number_of_entry="1" system_table_objects="[SystemTableObject(index=0, actuator_address='5e:6b:fc', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='5e:6b:fc'), SystemTableObject(index=1, actuator_address='91:b8:24', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='91:b8:24'), SystemTableObject(index=2, actuator_address='ea:3f:c3', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='ea:3f:c3'), SystemTableObject(index=3, actuator_address='f1:a6:4a', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='f1:a6:4a'), SystemTableObject(index=4, actuator_address='e5:30:43', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='e5:30:43'), SystemTableObject(index=5, actuator_address='57:15:ee', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='57:15:ee'), SystemTableObject(index=6, actuator_address='fd:47:07', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='fd:47:07'), SystemTableObject(index=7, actuator_address='02:29:4f', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='02:29:4f'), SystemTableObject(index=8, actuator_address='1f:8b:ac', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='1f:8b:ac'), SystemTableObject(index=9, actuator_address='86:6b:35', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='86:6b:35')]"/>
+2025-02-20 13:38:19,148: DEBUG: Received: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-02-20 13:38:19,148: DEBUG: SystemTableObject: 0a:41:42:ba:04:40:cc:02:41:42:ba
+2025-02-20 13:38:19,148: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="1" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=10, actuator_address='41:42:ba', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='41:42:ba')]"/>
+2025-02-20 13:38:28,940: DEBUG: TCP transport closed.
+2025-02-20 13:38:28,948: DEBUG: TCP transport closed.
+2025-02-20 13:58:51,267: DEBUG: Using proactor: IocpProactor
+2025-02-20 13:58:51,271: DEBUG: Heartbeat __init__
+2025-02-20 13:58:55,557: DEBUG: Socket connection to KLF 200 opened
+2025-02-20 13:58:55,557: DEBUG: Amount of connections since last HA start: 1
+2025-02-20 13:58:55,557: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-02-20 13:58:55,569: DEBUG: Received: 00:04:30:01:00:35
+2025-02-20 13:58:55,569: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-02-20 13:58:55,569: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-02-20 13:58:55,842: DEBUG: Received: 00:17:02:11:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e2:00:00:1a
+2025-02-20 13:58:55,842: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-01 06:48:00"/>
+2025-02-20 13:58:55,843: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="0" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-01 06:48:00"/>
+2025-02-20 13:58:56,053: DEBUG: Received: 00:03:01:01:03
+2025-02-20 13:58:56,053: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-02-20 13:58:56,058: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-02-20 13:58:56,058: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-02-20 13:58:56,059: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-02-20 13:58:56,059: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="10" remaining_number_of_entry="1" system_table_objects="[SystemTableObject(index=0, actuator_address='5e:6b:fc', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='5e:6b:fc'), SystemTableObject(index=1, actuator_address='91:b8:24', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='91:b8:24'), SystemTableObject(index=2, actuator_address='ea:3f:c3', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='ea:3f:c3'), SystemTableObject(index=3, actuator_address='f1:a6:4a', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='f1:a6:4a'), SystemTableObject(index=4, actuator_address='e5:30:43', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='e5:30:43'), SystemTableObject(index=5, actuator_address='57:15:ee', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='57:15:ee'), SystemTableObject(index=6, actuator_address='fd:47:07', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='fd:47:07'), SystemTableObject(index=7, actuator_address='02:29:4f', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='02:29:4f'), SystemTableObject(index=8, actuator_address='1f:8b:ac', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='1f:8b:ac'), SystemTableObject(index=9, actuator_address='86:6b:35', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='86:6b:35')]"/>
+2025-02-20 13:58:56,059: DEBUG: Received: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-02-20 13:58:56,059: DEBUG: SystemTableObject: 0a:41:42:ba:04:40:cc:02:41:42:ba
+2025-02-20 13:58:56,059: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="1" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=10, actuator_address='41:42:ba', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=6, io_manufacturer_id=2, backbone_reference='41:42:ba')]"/>
+2025-02-20 13:58:56,542: DEBUG: Received: 00:17:02:11:01:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e3:00:00:1a
+2025-02-20 13:58:56,543: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-02 01:00:16"/>
+2025-02-20 13:58:56,543: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="1" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-02 01:00:16"/>
+2025-02-20 13:58:57,248: DEBUG: Received: 00:17:02:11:02:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e4:00:00:1e
+2025-02-20 13:58:57,248: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="2" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-02 19:12:32"/>
+2025-02-20 13:58:57,248: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="2" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-02 19:12:32"/>
+2025-02-20 13:58:57,966: DEBUG: Received: 00:17:02:11:03:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e4:00:00:1f
+2025-02-20 13:58:57,967: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-02 19:12:32"/>
+2025-02-20 13:58:57,967: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="3" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-02 19:12:32"/>
+2025-02-20 13:58:58,659: DEBUG: Received: 00:17:02:11:04:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e5:00:00:19
+2025-02-20 13:58:58,659: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="4" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-03 13:24:48"/>
+2025-02-20 13:58:58,659: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="4" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-03 13:24:48"/>
+2025-02-20 13:58:59,371: DEBUG: Received: 00:17:02:11:05:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e6:00:00:1b
+2025-02-20 13:58:59,372: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="5" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-04 07:37:04"/>
+2025-02-20 13:58:59,372: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="5" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-04 07:37:04"/>
+2025-02-20 13:59:00,082: DEBUG: Received: 00:17:02:11:06:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e6:00:00:18
+2025-02-20 13:59:00,082: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="6" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-04 07:37:04"/>
+2025-02-20 13:59:00,082: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="6" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-04 07:37:04"/>
+2025-02-20 13:59:00,776: DEBUG: Received: 00:17:02:11:07:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e7:00:00:18
+2025-02-20 13:59:00,776: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="7" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-05 01:49:20"/>
+2025-02-20 13:59:00,776: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="7" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-05 01:49:20"/>
+2025-02-20 13:59:01,468: DEBUG: Received: 00:17:02:11:08:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e8:00:00:18
+2025-02-20 13:59:01,468: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="8" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-05 20:01:36"/>
+2025-02-20 13:59:01,469: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="8" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-05 20:01:36"/>
+2025-02-20 13:59:02,171: DEBUG: Received: 00:17:02:11:09:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e8:00:00:19
+2025-02-20 13:59:02,171: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="9" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-05 20:01:36"/>
+2025-02-20 13:59:02,171: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="9" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-05 20:01:36"/>
+2025-02-20 13:59:02,881: DEBUG: Received: 00:17:02:11:0a:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:d1:e9:00:00:1b
+2025-02-20 13:59:02,881: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="10" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-06 14:13:52"/>
+2025-02-20 13:59:02,881: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="10" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2081-08-06 14:13:52"/>
+2025-02-20 13:59:05,574: DEBUG: SEND: <FrameGetAllNodesInformationRequest/>
+2025-02-20 13:59:05,613: DEBUG: Received: 00:05:02:03:00:0b:0f
+2025-02-20 13:59:05,614: DEBUG: REC: <FrameGetAllNodesInformationConfirmation status="AllNodesInformationStatus.OK" number_of_nodes="11"/>
+2025-02-20 13:59:05,621: DEBUG: Received: 00:7f:02:04:00:00:00:00:52:6f:6c:6c:6c:61:64:65:6e:20:57:43:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:52
+2025-02-20 13:59:05,621: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="0" order="0" placement="0" name="Rollladen WC" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,621: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="0" order="0" placement="0" name="Rollladen WC" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,632: DEBUG: Received: 00:7f:02:04:01:00:01:00:52:6f:6c:6c:6c:61:64:65:6e:20:4b:69:6e:64:65:72:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:7d
+2025-02-20 13:59:05,632: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="1" order="1" placement="0" name="Rollladen Kinderzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,632: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="1" order="1" placement="0" name="Rollladen Kinderzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,644: DEBUG: Received: 00:7f:02:04:02:00:02:00:52:61:66:66:73:74:6f:72:65:20:57:6f:68:6e:7a:69:6d:6d:65:72:20:4d:69:74:74:65:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:04:40:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:ca
+2025-02-20 13:59:05,644: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="2" order="2" placement="0" name="Raffstore Wohnzimmer Mitte" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,644: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="2" order="2" placement="0" name="Raffstore Wohnzimmer Mitte" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,654: DEBUG: Received: 00:7f:02:04:03:00:03:00:52:61:66:66:73:74:6f:72:65:20:57:6f:68:6e:7a:69:6d:6d:65:72:20:52:65:63:68:74:73:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:04:40:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:b0
+2025-02-20 13:59:05,654: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="3" order="3" placement="0" name="Raffstore Wohnzimmer Rechts" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,654: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="3" order="3" placement="0" name="Raffstore Wohnzimmer Rechts" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,664: DEBUG: Received: 00:7f:02:04:04:00:04:00:52:6f:6c:6c:6c:61:64:65:6e:20:53:63:68:6c:61:66:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:71
+2025-02-20 13:59:05,664: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="4" order="4" placement="0" name="Rollladen Schlafzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,664: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="4" order="4" placement="0" name="Rollladen Schlafzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,676: DEBUG: Received: 00:7f:02:04:05:00:05:00:52:61:66:66:73:74:6f:72:65:20:45:73:73:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:04:40:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:d0
+2025-02-20 13:59:05,676: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="5" order="5" placement="0" name="Raffstore Esszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,676: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="5" order="5" placement="0" name="Raffstore Esszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,687: DEBUG: Received: 00:7f:02:04:06:00:06:00:52:6f:6c:6c:6c:61:64:65:6e:20:4b:c3:bc:63:68:65:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:1c
+2025-02-20 13:59:05,687: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="6" order="6" placement="0" name="Rollladen Küche" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,687: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="6" order="6" placement="0" name="Rollladen Küche" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,699: DEBUG: Received: 00:7f:02:04:07:00:07:00:52:6f:6c:6c:6c:61:64:65:6e:20:41:72:62:65:69:74:73:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:18
+2025-02-20 13:59:05,699: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="7" order="7" placement="0" name="Rollladen Arbeitszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,699: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="7" order="7" placement="0" name="Rollladen Arbeitszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,709: DEBUG: Received: 00:7f:02:04:08:00:08:00:52:6f:6c:6c:6c:61:64:65:6e:20:46:65:72:6e:73:65:68:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:03
+2025-02-20 13:59:05,709: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="8" order="8" placement="0" name="Rollladen Fernsehzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,709: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="8" order="8" placement="0" name="Rollladen Fernsehzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,723: DEBUG: Received: 00:7f:02:04:09:00:09:00:52:6f:6c:6c:6c:61:64:65:6e:20:45:73:73:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:07
+2025-02-20 13:59:05,723: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="9" order="9" placement="0" name="Rollladen Esszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,723: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="9" order="9" placement="0" name="Rollladen Esszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,733: DEBUG: Received: 00:7f:02:04:0a:00:0a:00:52:61:66:66:73:74:6f:72:65:20:57:6f:68:6e:7a:69:6d:6d:65:72:20:4c:69:6e:6b:73:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:04:40:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:b6:d1:ec:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:d8
+2025-02-20 13:59:05,733: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="10" order="10" placement="0" name="Raffstore Wohnzimmer Links" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,733: DEBUG: Received: 00:03:02:05:04
+2025-02-20 13:59:05,733: DEBUG: REC: <FrameGetAllNodesInformationFinishedNotification/>
+2025-02-20 13:59:05,734: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="10" order="10" placement="0" name="Raffstore Wohnzimmer Links" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-02-20 07:55:40" alias_array=""/>
+2025-02-20 13:59:05,734: DEBUG: TCP transport closed.
+2025-02-20 13:59:05,749: DEBUG: TCP transport closed.
+2025-04-13 16:16:44,236: DEBUG: Using proactor: IocpProactor
+2025-04-13 16:16:44,239: DEBUG: Heartbeat __init__
+2025-04-13 16:16:48,485: DEBUG: Socket connection to KLF 200 opened
+2025-04-13 16:16:48,485: DEBUG: Amount of connections since last HA start: 1
+2025-04-13 16:16:48,485: DEBUG: SEND: <FramePasswordEnterRequest password="BD****"/>
+2025-04-13 16:16:48,504: DEBUG: Received: 00:04:30:01:00:35
+2025-04-13 16:16:48,504: DEBUG: REC: <FramePasswordEnterConfirmation status="PasswordEnterConfirmationStatus.SUCCESSFUL"/>
+2025-04-13 16:16:48,504: DEBUG: SEND: <FrameGetSystemTableDataRequest/>
+2025-04-13 16:16:48,576: DEBUG: Received: 00:17:02:11:05:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:c7:56:00:00:bd
+2025-04-13 16:16:48,576: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="5" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-23 05:48:00"/>
+2025-04-13 16:16:48,576: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="5" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-23 05:48:00"/>
+2025-04-13 16:16:48,786: DEBUG: Received: 00:03:01:01:03
+2025-04-13 16:16:48,787: DEBUG: REC: <FrameGetSystemTableDataConfirmation/>
+2025-04-13 16:16:48,791: DEBUG: Received: 00:73:01:02:0a:00:5e:6b:fc:00:80:cc:02:5e:6b:fc:01:91:b8:24:00:80:cc:02:91:b8:24:02:ea:3f:c3:04:40:cc:02:ea:3f:c3:03:f1:a6:4a:04:40:cc:02:f1:a6:4a:04:e5:30:43:00:80:cc:02:e5:30:43:05:57:15:ee:04:40:cc:02:57:15:ee:06:fd:47:07:00:80:cc:02:fd:47:07:07:02:29:4f:00:80:cc:02:02:29:4f:08:1f:8b:ac:00:80:cc:02:1f:8b:ac:09:86:6b:35:00:80:cc:02:86:6b:35:01:be
+2025-04-13 16:16:48,792: DEBUG: SystemTableObject: 00:5e:6b:fc:00:80:cc:02:5e:6b:fc
+2025-04-13 16:16:48,792: DEBUG: SystemTableObject: 01:91:b8:24:00:80:cc:02:91:b8:24
+2025-04-13 16:16:48,792: DEBUG: SystemTableObject: 02:ea:3f:c3:04:40:cc:02:ea:3f:c3
+2025-04-13 16:16:48,792: DEBUG: SystemTableObject: 03:f1:a6:4a:04:40:cc:02:f1:a6:4a
+2025-04-13 16:16:48,792: DEBUG: SystemTableObject: 04:e5:30:43:00:80:cc:02:e5:30:43
+2025-04-13 16:16:48,792: DEBUG: SystemTableObject: 05:57:15:ee:04:40:cc:02:57:15:ee
+2025-04-13 16:16:48,792: DEBUG: SystemTableObject: 06:fd:47:07:00:80:cc:02:fd:47:07
+2025-04-13 16:16:48,792: DEBUG: SystemTableObject: 07:02:29:4f:00:80:cc:02:02:29:4f
+2025-04-13 16:16:48,793: DEBUG: SystemTableObject: 08:1f:8b:ac:00:80:cc:02:1f:8b:ac
+2025-04-13 16:16:48,793: DEBUG: SystemTableObject: 09:86:6b:35:00:80:cc:02:86:6b:35
+2025-04-13 16:16:48,793: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="10" remaining_number_of_entry="1" system_table_objects="[SystemTableObject(index=0, actuator_address='5e:6b:fc', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='5e:6b:fc'), SystemTableObject(index=1, actuator_address='91:b8:24', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='91:b8:24'), SystemTableObject(index=2, actuator_address='ea:3f:c3', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='ea:3f:c3'), SystemTableObject(index=3, actuator_address='f1:a6:4a', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='f1:a6:4a'), SystemTableObject(index=4, actuator_address='e5:30:43', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='e5:30:43'), SystemTableObject(index=5, actuator_address='57:15:ee', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='57:15:ee'), SystemTableObject(index=6, actuator_address='fd:47:07', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='fd:47:07'), SystemTableObject(index=7, actuator_address='02:29:4f', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='02:29:4f'), SystemTableObject(index=8, actuator_address='1f:8b:ac', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='1f:8b:ac'), SystemTableObject(index=9, actuator_address='86:6b:35', actuator_type=<NodeType.ROLLER_SHUTTER: 2>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='86:6b:35')]"/>
+2025-04-13 16:16:48,793: DEBUG: Received: 00:10:01:02:01:0a:41:42:ba:04:40:cc:02:41:42:ba:00:92
+2025-04-13 16:16:48,793: DEBUG: SystemTableObject: 0a:41:42:ba:04:40:cc:02:41:42:ba
+2025-04-13 16:16:48,793: DEBUG: REC: <FrameGetSystemTableDataNotification number_of_objects="1" remaining_number_of_entry="0" system_table_objects="[SystemTableObject(index=10, actuator_address='41:42:ba', actuator_type=<NodeType.EXTERNAL_VENETIAN_BLIND: 17>, actuator_subtype='0', power_save_mode=<PowerMode.ALWAYS_ALIVE: 0>, io_membership=True, rf_support=True, actuator_turnaround_time=3, io_manufacturer_id=2, backbone_reference='41:42:ba')]"/>
+2025-04-13 16:16:49,289: DEBUG: Received: 00:17:02:11:06:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:c7:57:00:00:bf
+2025-04-13 16:16:49,289: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="6" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-24 00:00:16"/>
+2025-04-13 16:16:49,289: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="6" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-24 00:00:16"/>
+2025-04-13 16:16:49,982: DEBUG: Received: 00:17:02:11:07:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:c7:58:00:00:b1
+2025-04-13 16:16:49,983: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="7" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-24 18:12:32"/>
+2025-04-13 16:16:49,983: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="7" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-24 18:12:32"/>
+2025-04-13 16:16:50,683: DEBUG: Received: 00:17:02:11:08:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:c7:58:00:00:be
+2025-04-13 16:16:50,683: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="8" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-24 18:12:32"/>
+2025-04-13 16:16:50,683: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="8" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-24 18:12:32"/>
+2025-04-13 16:16:51,374: DEBUG: Received: 00:17:02:11:09:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:c7:59:00:00:be
+2025-04-13 16:16:51,374: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="9" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-25 12:24:48"/>
+2025-04-13 16:16:51,374: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="9" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-25 12:24:48"/>
+2025-04-13 16:16:52,130: DEBUG: Received: 00:17:02:11:0a:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:c7:5a:00:00:be
+2025-04-13 16:16:52,130: DEBUG: REC: <FrameNodeStatePositionChangedNotification node_id="10" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-26 06:37:04"/>
+2025-04-13 16:16:52,130: DEBUG: NodeUpdater process frame: <FrameNodeStatePositionChangedNotification node_id="10" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2075-12-26 06:37:04"/>
+2025-04-13 16:16:58,512: DEBUG: SEND: <FrameGetAllNodesInformationRequest/>
+2025-04-13 16:16:58,640: DEBUG: Received: 00:05:02:03:00:0b:0f
+2025-04-13 16:16:58,640: DEBUG: REC: <FrameGetAllNodesInformationConfirmation status="AllNodesInformationStatus.OK" number_of_nodes="11"/>
+2025-04-13 16:16:58,650: DEBUG: Received: 00:7f:02:04:00:00:00:00:52:6f:6c:6c:6c:61:64:65:6e:20:57:43:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:85
+2025-04-13 16:16:58,650: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="0" order="0" placement="0" name="Rollladen WC" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,650: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="0" order="0" placement="0" name="Rollladen WC" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,662: DEBUG: Received: 00:7f:02:04:01:00:01:00:52:6f:6c:6c:6c:61:64:65:6e:20:4b:69:6e:64:65:72:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:aa
+2025-04-13 16:16:58,662: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="1" order="1" placement="0" name="Rollladen Kinderzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,662: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="1" order="1" placement="0" name="Rollladen Kinderzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,672: DEBUG: Received: 00:7f:02:04:02:00:02:00:52:61:66:66:73:74:6f:72:65:20:57:6f:68:6e:7a:69:6d:6d:65:72:20:4d:69:74:74:65:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:04:40:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:1d
+2025-04-13 16:16:58,672: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="2" order="2" placement="0" name="Raffstore Wohnzimmer Mitte" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,672: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="2" order="2" placement="0" name="Raffstore Wohnzimmer Mitte" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,683: DEBUG: Received: 00:7f:02:04:03:00:03:00:52:61:66:66:73:74:6f:72:65:20:57:6f:68:6e:7a:69:6d:6d:65:72:20:52:65:63:68:74:73:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:04:40:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:67
+2025-04-13 16:16:58,683: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="3" order="3" placement="0" name="Raffstore Wohnzimmer Rechts" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,683: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="3" order="3" placement="0" name="Raffstore Wohnzimmer Rechts" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,694: DEBUG: Received: 00:7f:02:04:04:00:04:00:52:6f:6c:6c:6c:61:64:65:6e:20:53:63:68:6c:61:66:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:a6
+2025-04-13 16:16:58,694: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="4" order="4" placement="0" name="Rollladen Schlafzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,694: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="4" order="4" placement="0" name="Rollladen Schlafzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,704: DEBUG: Received: 00:7f:02:04:05:00:05:00:52:61:66:66:73:74:6f:72:65:20:45:73:73:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:04:40:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:07
+2025-04-13 16:16:58,704: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="5" order="5" placement="0" name="Raffstore Esszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,704: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="5" order="5" placement="0" name="Raffstore Esszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,716: DEBUG: Received: 00:7f:02:04:06:00:06:00:52:6f:6c:6c:6c:61:64:65:6e:20:4b:c3:bc:63:68:65:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:cb
+2025-04-13 16:16:58,716: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="6" order="6" placement="0" name="Rollladen Küche" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,716: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="6" order="6" placement="0" name="Rollladen Küche" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,727: DEBUG: Received: 00:7f:02:04:07:00:07:00:52:6f:6c:6c:6c:61:64:65:6e:20:41:72:62:65:69:74:73:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:cf
+2025-04-13 16:16:58,728: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="7" order="7" placement="0" name="Rollladen Arbeitszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,728: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="7" order="7" placement="0" name="Rollladen Arbeitszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,738: DEBUG: Received: 00:7f:02:04:08:00:08:00:52:6f:6c:6c:6c:61:64:65:6e:20:46:65:72:6e:73:65:68:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:d4
+2025-04-13 16:16:58,739: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="8" order="8" placement="0" name="Rollladen Fernsehzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,739: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="8" order="8" placement="0" name="Rollladen Fernsehzimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,751: DEBUG: Received: 00:7f:02:04:09:00:09:00:52:6f:6c:6c:6c:61:64:65:6e:20:45:73:73:7a:69:6d:6d:65:72:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:00:80:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:d0
+2025-04-13 16:16:58,752: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="9" order="9" placement="0" name="Rollladen Esszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,752: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="9" order="9" placement="0" name="Rollladen Esszimmer" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.ROLLER_SHUTTER" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,761: DEBUG: Received: 00:7f:02:04:0a:00:0a:00:52:61:66:66:73:74:6f:72:65:20:57:6f:68:6e:7a:69:6d:6d:65:72:20:4c:69:6e:6b:73:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:01:04:40:00:00:00:00:00:00:00:00:00:00:00:00:00:2d:00:00:00:00:f7:ff:f7:ff:f7:ff:f7:ff:00:00:67:fb:c7:60:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:0f
+2025-04-13 16:16:58,762: DEBUG: REC: <FrameGetAllNodesInformationNotification node_id="10" order="10" placement="0" name="Raffstore Wohnzimmer Links" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,762: DEBUG: Received: 00:03:02:05:04
+2025-04-13 16:16:58,762: DEBUG: REC: <FrameGetAllNodesInformationFinishedNotification/>
+2025-04-13 16:16:58,762: DEBUG: NodeUpdater process frame: <FrameGetAllNodesInformationNotification node_id="10" order="10" placement="0" name="Raffstore Wohnzimmer Links" velocity="Velocity.SILENT" node_type="NodeTypeWithSubtype.EXTERIOR_VENETIAN_BLIND" product_group="0" product_type="0" node_variation="NodeVariation.NOT_SET" power_mode="0" build_number="0" serial_number="None" state="UNKNOWN" current_position="0 %" target="0 %" current_position_fp1="UNKNOWN" current_position_fp2="UNKNOWN" current_position_fp3="UNKNOWN" current_position_fp4="UNKNOWN" remaining_time="0" time="2025-04-13 16:17:04" alias_array=""/>
+2025-04-13 16:16:58,763: DEBUG: TCP transport closed.
+2025-04-13 16:16:58,786: DEBUG: TCP transport closed.

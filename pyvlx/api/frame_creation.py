@@ -25,6 +25,8 @@ from .frames import (
     FrameGetProtocolVersionRequest, FrameGetSceneListConfirmation,
     FrameGetSceneListNotification, FrameGetSceneListRequest,
     FrameGetStateConfirmation, FrameGetStateRequest,
+    FrameGetSystemTableDataRequest, FrameGetSystemTableDataNotification, 
+    FrameGetSystemTableDataConfirmation,
     FrameGetVersionConfirmation, FrameGetVersionRequest,
     FrameHouseStatusMonitorDisableConfirmation,
     FrameHouseStatusMonitorDisableRequest,
@@ -105,6 +107,13 @@ def create_frame(command: Command) -> Optional[FrameBase]:
         return FrameDiscoverNodesConfirmation()
     if command == Command.GW_CS_DISCOVER_NODES_NTF:
         return FrameDiscoverNodesNotification()
+
+    if command == Command.GW_CS_GET_SYSTEMTABLE_DATA_REQ:
+        return FrameGetSystemTableDataRequest()
+    if command == Command.GW_CS_GET_SYSTEMTABLE_DATA_CFM:
+        return FrameGetSystemTableDataConfirmation()
+    if command == Command.GW_CS_GET_SYSTEMTABLE_DATA_NTF:
+        return FrameGetSystemTableDataNotification()
 
     if command == Command.GW_GET_SCENE_LIST_REQ:
         return FrameGetSceneListRequest()
