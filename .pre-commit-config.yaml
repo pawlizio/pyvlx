@@ -23,4 +23,4 @@ repos:
     hooks:
       - id: pytest
         additional_dependencies: [pytest-cov==4.1.0]
-        args: [--cov=.,--cov-report=xml:.coverage.xml, --cov-report=html:.coverage_html_report]
+        args: [-- =.,--cov-report=xml:.coverage.xml, --cov-report=html:.coverage_html_report]
