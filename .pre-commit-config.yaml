@@ -18,4 +18,9 @@ repos:
     rev: 7.0.0
     hooks:
       - id: flake8
-        additional_dependencies: [flake8-bugbear==23.9.16, flake8-import-order==0.18.1, flake8-docstrings==1.7.0, pydocstyle==6.3.0]
+  - repo: https://github.com/pytest-dev/pytest
+    rev: 7.4.0
+    hooks:
+      - id: pytest
+        additional_dependencies: [pytest-cov==4.1.0]
+        args: [--cov=.,--cov-report=xml:.coverage.xml, --cov-report=html:.coverage_html_report]
