@@ -15,6 +15,7 @@ jobs:
     name: Dependency Review
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    if: github.event_name == 'pull_request' || github.event_name == 'pull_request_target'
     steps:
       - uses: actions/dependency-review-action@v4
 
