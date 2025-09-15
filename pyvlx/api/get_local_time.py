@@ -1,4 +1,5 @@
 """Module for local time firmware version from API."""
+
 from typing import TYPE_CHECKING
 
 from pyvlx.dataobjects import DtoLocalTime

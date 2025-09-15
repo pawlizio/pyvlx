@@ -1,4 +1,5 @@
 """Unit tests frame_creation module."""
+
 import unittest
 
 from pyvlx.api.frames import calc_crc, extract_from_frame

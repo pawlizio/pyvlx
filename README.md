@@ -67,14 +67,14 @@ async def main(loop):
     # limit = await pyvlx.nodes['Bath'].get_limitation()
     # limit.min_value
     # limit.max_value
-    
+
     # Changing of on-off switches:
     # await pyvlx.nodes['CoffeeMaker'].set_on()
     # await pyvlx.nodes['CoffeeMaker'].set_off()
 
     # You can easily rename nodes:
     # await pyvlx.nodes["Window 10"].rename("Window 11")
-        
+
     await pyvlx.disconnect()
 
 if __name__ == '__main__':

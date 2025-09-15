@@ -1,4 +1,5 @@
 """Unit tests for FrameGatewayRebootConfirmation."""
+
 import unittest
 
 from pyvlx.api.frame_creation import frame_from_raw
@@ -25,4 +26,4 @@ class TestFrameGatewayRebootConfirmation(unittest.TestCase):
     def test_str(self):
         """Test string representation of FrameGatewayRebootConfirmation."""
         frame = FrameGatewayRebootConfirmation()
-        self.assertEqual(str(frame), '<FrameGatewayRebootConfirmation/>')
+        self.assertEqual(str(frame), "<FrameGatewayRebootConfirmation/>")

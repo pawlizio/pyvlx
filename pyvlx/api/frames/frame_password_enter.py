@@ -1,4 +1,5 @@
 """Module for password enter frame classes."""
+
 from enum import Enum
 from typing import Optional
 
@@ -52,7 +53,10 @@ class FramePasswordEnterConfirmation(FrameBase):
 
     PAYLOAD_LEN = 1
 
-    def __init__(self, status: PasswordEnterConfirmationStatus = PasswordEnterConfirmationStatus.SUCCESSFUL):
+    def __init__(
+        self,
+        status: PasswordEnterConfirmationStatus = PasswordEnterConfirmationStatus.SUCCESSFUL,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_PASSWORD_ENTER_CFM)
         self.status = status

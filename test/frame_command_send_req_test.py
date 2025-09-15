@@ -1,4 +1,5 @@
 """Unit tests for FrameCommandSendRequest."""
+
 import unittest
 
 from pyvlx import Position, PyVLXException

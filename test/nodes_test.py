@@ -1,4 +1,5 @@
 """Unit test for Nodes object."""
+
 import unittest
 from unittest.mock import MagicMock
 
@@ -51,7 +52,9 @@ class TestNodes(unittest.TestCase):
         nodes = Nodes(self.pyvlx)
         window1 = Window(self.pyvlx, 23, "Window_1", "aa:bb:aa:bb:aa:bb:aa:23")
         nodes.add(window1)
-        window2 = Window(self.pyvlx, 42, "Window_2", "aa:bb:aa:bb:aa:bb:aa:42")  # not added
+        window2 = Window(
+            self.pyvlx, 42, "Window_2", "aa:bb:aa:bb:aa:bb:aa:42"
+        )  # not added
         self.assertTrue("Window_1" in nodes)
         self.assertTrue(23 in nodes)
         self.assertTrue(window1 in nodes)
@@ -68,7 +71,9 @@ class TestNodes(unittest.TestCase):
         nodes.add(window2)
         window3 = Window(self.pyvlx, 2, "Window_3", "aa:bb:aa:bb:aa:bb:aa:02")
         nodes.add(window3)
-        self.assertEqual(tuple(nodes.__iter__()), (window1, window2, window3))  # pylint: disable=unnecessary-dunder-call
+        self.assertEqual(
+            tuple(nodes.__iter__()), (window1, window2, window3)
+        )  # pylint: disable=unnecessary-dunder-call
 
     def test_len(self) -> None:
         """Test len."""

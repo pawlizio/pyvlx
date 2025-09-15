@@ -11,8 +11,7 @@ class PyVLXException(Exception):
 
     def __str__(self) -> str:
         """Return object as readable string."""
-        return '<PyVLXException description="{0}" />' \
-            .format(self.description)
+        return '<PyVLXException description="{0}" />'.format(self.description)
 
 
 class InvalidToken(PyVLXException):

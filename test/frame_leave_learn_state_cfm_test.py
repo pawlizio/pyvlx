@@ -1,4 +1,5 @@
 """Unit tests for FrameLeaveLearnStateConfirmation."""
+
 import unittest
 
 from pyvlx.api.frame_creation import frame_from_raw
@@ -25,4 +26,7 @@ class TestFrameLeaveLearnStateConfirmation(unittest.TestCase):
     def test_str(self) -> None:
         """Test string representation of FrameLeaveLearnStateConfirmation."""
         frame = FrameLeaveLearnStateConfirmation()
-        self.assertEqual(str(frame), '<FrameLeaveLearnStateConfirmation status="LeaveLearnStateConfirmationStatus.FAILED"/>')
+        self.assertEqual(
+            str(frame),
+            '<FrameLeaveLearnStateConfirmation status="LeaveLearnStateConfirmationStatus.FAILED"/>',
+        )

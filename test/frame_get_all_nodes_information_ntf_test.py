@@ -1,4 +1,5 @@
 """Unit tests for FrameGetAllNodesInformationNotification."""
+
 import unittest
 from datetime import datetime
 

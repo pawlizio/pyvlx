@@ -17,7 +17,12 @@ if TYPE_CHECKING:
 class GetLimitation(ApiEvent):
     """Class for retrieving gateway state from API."""
 
-    def __init__(self, pyvlx: "PyVLX", node_id: int, limitation_type: LimitationType = LimitationType.MIN_LIMITATION):
+    def __init__(
+        self,
+        pyvlx: "PyVLX",
+        node_id: int,
+        limitation_type: LimitationType = LimitationType.MIN_LIMITATION,
+    ):
         """Initialize SceneList class."""
         super().__init__(pyvlx=pyvlx)
         self.node_id = node_id
@@ -60,5 +65,8 @@ class GetLimitation(ApiEvent):
     def request_frame(self) -> FrameGetLimitationStatus:
         """Construct initiating frame."""
         self.session_id = get_new_session_id()
-        return FrameGetLimitationStatus(node_ids=[self.node_id], session_id=self.session_id,
-                                        limitation_type=self.limitation_type)
+        return FrameGetLimitationStatus(
+            node_ids=[self.node_id],
+            session_id=self.session_id,
+            limitation_type=self.limitation_type,
+        )

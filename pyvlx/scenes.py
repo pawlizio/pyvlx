@@ -1,4 +1,5 @@
 """Module for storing and accessing scene list."""
+
 from typing import TYPE_CHECKING, Iterator, List, Union
 
 from .api import GetSceneList

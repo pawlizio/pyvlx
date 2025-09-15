@@ -1,4 +1,5 @@
 """Module for requesting change of node name."""
+
 from typing import Optional
 
 from pyvlx.const import Command, NodeVariation
@@ -13,12 +14,12 @@ class FrameNodeInformationChangedNotification(FrameBase):
     PAYLOAD_LEN = 69
 
     def __init__(
-            self,
-            node_id: int = 0,
-            name: Optional[str] = None,
-            order: int = 0,
-            placement: int = 0,
-            node_variation: NodeVariation = NodeVariation.NOT_SET,
+        self,
+        node_id: int = 0,
+        name: Optional[str] = None,
+        order: int = 0,
+        placement: int = 0,
+        node_variation: NodeVariation = NodeVariation.NOT_SET,
     ):
         """Init Frame."""
         super().__init__(Command.GW_NODE_INFORMATION_CHANGED_NTF)
@@ -51,7 +52,11 @@ class FrameNodeInformationChangedNotification(FrameBase):
         return (
             '<{} node_id="{}" name="{}" order="{}" '
             'placement="{}" node_variation="{}"/>'.format(
-                type(self).__name__, self.node_id, self.name,
-                self.order, self.placement, self.node_variation
+                type(self).__name__,
+                self.node_id,
+                self.name,
+                self.order,
+                self.placement,
+                self.node_variation,
             )
         )

@@ -1,4 +1,5 @@
 """Module for enum and consts."""
+
 from enum import Enum
 from typing import Any
 
@@ -227,16 +228,16 @@ class Originator(Enum):
 
     # pylint: disable=line-too-long
 
-    USER = 1                            # User Remote control causing action on actuator
-    RAIN = 2                            # Rain sensor
-    TIMER = 3                           # Timer controlled
-    UPS = 5                             # UPC unit
-    SAAC = 8                            # Stand Alone Automatic Controls
-    WIND = 9                            # Wind sensor
-    LOAD_SHEDDING = 11                  # Managers for requiring a particular electric load shed
-    LOCAL_LIGHT = 12                    # Local light sensor
+    USER = 1  # User Remote control causing action on actuator
+    RAIN = 2  # Rain sensor
+    TIMER = 3  # Timer controlled
+    UPS = 5  # UPC unit
+    SAAC = 8  # Stand Alone Automatic Controls
+    WIND = 9  # Wind sensor
+    LOAD_SHEDDING = 11  # Managers for requiring a particular electric load shed
+    LOCAL_LIGHT = 12  # Local light sensor
     UNSPECIFIC_ENVIRONMENT_SENSOR = 13  # Used in context with commands transmitted on basis of an unknown sensor for protection of an end-product or house
-    EMERGENCY = 255                     # Used in context with emergency or security commands
+    EMERGENCY = 255  # Used in context with emergency or security commands
 
 
 class Priority(Enum):
@@ -255,8 +256,8 @@ class Priority(Enum):
 class LockPriorityLevel(Enum):
     """Enum Class for Lock Priority Level."""
 
-    NO = 0       # Do not lock any priority level.
-    MIN30 = 1    # Lock one or more priority level in 30 minutes.
+    NO = 0  # Do not lock any priority level.
+    MIN30 = 1  # Lock one or more priority level in 30 minutes.
     FOREVER = 2  # Lock one or more priority level forever
 
 
@@ -378,7 +379,7 @@ class GatewaySubState(Enum):
     PERFORMING_TASK_COMMAND = 0x80
     PERFORMING_TASK_ACTIVATE_GROUP = 0x81
     PERFORMING_TASK_ACTIVATE_SCENE = 0x82
-    RESERVED_132 = 0x84   # <-- hey @VELUX: Can you tell us what this value means?
+    RESERVED_132 = 0x84  # <-- hey @VELUX: Can you tell us what this value means?
 
 
 class LeaveLearnStateConfirmationStatus(Enum):
@@ -391,12 +392,12 @@ class LeaveLearnStateConfirmationStatus(Enum):
 class ErrorNumber(Enum):
     """Enum class for Errornumber in GW_ERROR_NTF."""
 
-    UNDEFINED = 0           # Not further defined error.
-    WRONG_COMMAND = 1       # Unknown Command or command is not accepted at this state.
-    FRAME_ERROR = 2         # ERROR on Frame Structure.
-    BUSY = 7                # Busy. Try again later.
+    UNDEFINED = 0  # Not further defined error.
+    WRONG_COMMAND = 1  # Unknown Command or command is not accepted at this state.
+    FRAME_ERROR = 2  # ERROR on Frame Structure.
+    BUSY = 7  # Busy. Try again later.
     BAD_SYSTABLE_INDEX = 8  # Bad system table index.
-    NO_AUTH = 12            # Not authenticated.
+    NO_AUTH = 12  # Not authenticated.
 
 
 class ControllerCopyMode(Enum):
@@ -412,8 +413,12 @@ class ControllerCopyStatus(Enum):
     """Enum class for Copy Controller Mode."""
 
     OK = 0  # OK. Data transfer to or from client controller.
-    FAILED_TRANSFER = 1  # Failed. Data transfer to or from client controller interrupted.
-    CANCELLED = 4  # Ok. Receiving configuration mode is cancelled in the client controller.
+    FAILED_TRANSFER = (
+        1  # Failed. Data transfer to or from client controller interrupted.
+    )
+    CANCELLED = (
+        4  # Ok. Receiving configuration mode is cancelled in the client controller.
+    )
     FAILED_TIMEOUT = 5  # Failed. Timeout.
     FAILED_NOTREADY = 11  # Failed. Configuration service not ready.
 
@@ -423,32 +428,34 @@ class ChangeKeyStatus(Enum):
 
     # pylint: disable=line-too-long
 
-    OK_CONTROLLER = 0        # Ok. Key Change in client controller.
-    OK_ALL = 2               # Ok. Key change in system table all nodes updated with current key.
-    OK_PARTIALLY = 3         # Ok. Key Change in System table. Not all nodes in system table was updated with current key. Check bit array.
-    OK_RECEIVED = 5          # Ok. Client controller received a key.
-    FAILED_NOTDISABLED = 7   # Failed. Local Stimuli not disabled in all Client System table nodes. See bit array.
+    OK_CONTROLLER = 0  # Ok. Key Change in client controller.
+    OK_ALL = 2  # Ok. Key change in system table all nodes updated with current key.
+    OK_PARTIALLY = 3  # Ok. Key Change in System table. Not all nodes in system table was updated with current key. Check bit array.
+    OK_RECEIVED = 5  # Ok. Client controller received a key.
+    FAILED_NOTDISABLED = 7  # Failed. Local Stimuli not disabled in all Client System table nodes. See bit array.
     FAILED_NOCONTROLLER = 9  # Failed. Not able to find a controller to get key from.
     FAILED_DTSNOTREADY = 10  # Failed. DTS not ready.
-    FAILED_DTSERROR = 11     # Failed. DTS error. At DTS error no key change will take place.
-    FAILED_CSNOTREADY = 16   # Failed. CS not ready.
+    FAILED_DTSERROR = (
+        11  # Failed. DTS error. At DTS error no key change will take place.
+    )
+    FAILED_CSNOTREADY = 16  # Failed. CS not ready.
 
 
 class PgcJobState(Enum):
     """Enum class for Product Generic Configuration Job State."""
 
     STARTED = 0  # PGC job started
-    ENDED = 1    # PGC job ended. Either OK or with error.
+    ENDED = 1  # PGC job ended. Either OK or with error.
     CS_BUSY = 2  # CS busy with other services
 
 
 class PgcJobStatus(Enum):
     """Enum class for Product Generic Configuration Job Status."""
 
-    OK = 0            # OK - PGC and CS job completed
+    OK = 0  # OK - PGC and CS job completed
     OK_PARTIALLY = 1  # Partly success.
     FAILED_PGCCS = 2  # Failed - Error in PGC/CS job.
-    FAILED = 3        # Failed - Too long key press or cancel of CS service.
+    FAILED = 3  # Failed - Too long key press or cancel of CS service.
 
 
 class PgcJobType(Enum):
@@ -456,10 +463,10 @@ class PgcJobType(Enum):
 
     # pylint: disable=line-too-long
 
-    RECEIVE_ONLY = 0        # Receive system copy or only get key. Short PGC button press.
+    RECEIVE_ONLY = 0  # Receive system copy or only get key. Short PGC button press.
     RECEIVE_DISTRIBUTE = 1  # Receive key and distribute. Short PGC button press.
-    TRANSMIT = 2            # Transmit key (and system). Long PGC button press.
-    GENERATE = 3            # Generate new key and distribute or only generate new key. Very long PGC button press.
+    TRANSMIT = 2  # Transmit key (and system). Long PGC button press.
+    GENERATE = 3  # Generate new key and distribute or only generate new key. Very long PGC button press.
 
 
 class DiscoverStatus(Enum):
@@ -467,33 +474,33 @@ class DiscoverStatus(Enum):
 
     # pylint: disable=line-too-long
 
-    OK = 0                 # OK. Discovered nodes. See bit array.
+    OK = 0  # OK. Discovered nodes. See bit array.
     FAILED_CSNOTREADY = 5  # Failed. CS not ready.
-    OK_PARTIALLY = 6       # OK. Same as DISCOVER_NODES_PERFORMED but some nodes were not added to system table (e.g. System table has reached its limit).
-    FAILED_CSBUSY = 7      # CS busy with another task.
+    OK_PARTIALLY = 6  # OK. Same as DISCOVER_NODES_PERFORMED but some nodes were not added to system table (e.g. System table has reached its limit).
+    FAILED_CSBUSY = 7  # CS busy with another task.
 
 
 class PowerMode(Enum):
     """Enum class for Acutuator power Mode."""
 
-    ALWAYS_ALIVE = 0    # ALWAYS_ALIVE
+    ALWAYS_ALIVE = 0  # ALWAYS_ALIVE
     LOW_POWER_MODE = 1  # LOW_POWER_MODE
 
 
 class ChangeType(Enum):
     """Enum class Change Type in Group or Scene NTF."""
 
-    DELETED = 0   # Scene or Group deleted
+    DELETED = 0  # Scene or Group deleted
     MODIFIED = 1  # Information modified
 
 
 class ContactInputAssignement(Enum):
     """Enum class for Contact Input."""
 
-    NOT_ASSINGED = 0   # Input not assigned.
-    SCENE = 1          # Scene
+    NOT_ASSINGED = 0  # Input not assigned.
+    SCENE = 1  # Scene
     PRODUCT_GROUP = 2  # Product group
-    BY_MODE = 3        # One node controlled by mode
+    BY_MODE = 3  # One node controlled by mode
 
 
 class OutputID(Enum):
@@ -519,10 +526,10 @@ class GroupType(Enum):
 class LimitationTimer(Enum):
     """Enum class for Limitation Timer."""
 
-    BY_SECONDS = 1      # 1=30 seconds 2=60 seconds 252=7590 seconds
-    UNLIMITED = 253     # unlimited
+    BY_SECONDS = 1  # 1=30 seconds 2=60 seconds 252=7590 seconds
+    UNLIMITED = 253  # unlimited
     CLEAR_MASTER = 254  # clear entry for the Master
-    CLEAR_ALL = 255     # clear all
+    CLEAR_ALL = 255  # clear all
 
 
 class LimitationType(Enum):
@@ -535,39 +542,39 @@ class LimitationType(Enum):
 class LockTime(Enum):
     """Enum class for Lock Time."""
 
-    BY_SECONDS = 1   # 1=30 seconds, 2=60 seconds .. 254=7650 seconds
+    BY_SECONDS = 1  # 1=30 seconds, 2=60 seconds .. 254=7650 seconds
     UNLIMITED = 255  # Unlimited time
 
 
 class WinkTime(Enum):
     """Enum class for Wink Time."""
 
-    STOP = 0                # Stop wink.
-    BY_SECONDS = 1          # 1=Wink in 1 sec., 2= Wink in 2 sec. 253=Wink in 253 sec.
+    STOP = 0  # Stop wink.
+    BY_SECONDS = 1  # 1=Wink in 1 sec., 2= Wink in 2 sec. 253=Wink in 253 sec.
     BY_MANUFACTUERER = 254  # Manufacturer specific wink time.
-    FOREVER = 255           # Wink forever.
+    FOREVER = 255  # Wink forever.
 
 
 class NodeParameter(Enum):
     """Enum Class for Node Parameter."""
 
-    MP = 0x00       # Main Parameter.
-    FP1 = 0x01      # Functional Parameter number 1.
-    FP2 = 0x02      # Functional Parameter number 2.
-    FP3 = 0x03      # Functional Parameter number 3.
-    FP4 = 0x04      # Functional Parameter number 4.
-    FP5 = 0x05      # Functional Parameter number 5.
-    FP6 = 0x06      # Functional Parameter number 6.
-    FP7 = 0x07      # Functional Parameter number 7.
-    FP8 = 0x08      # Functional Parameter number 8.
-    FP9 = 0x09      # Functional Parameter number 9.
-    FP10 = 0x0A     # Functional Parameter number 10.
-    FP11 = 0x0B     # Functional Parameter number 11.
-    FP12 = 0x0C     # Functional Parameter number 12.
-    FP13 = 0x0D     # Functional Parameter number 13.
-    FP14 = 0x0E     # Functional Parameter number 14.
-    FP15 = 0x0F     # Functional Parameter number 15.
-    FP16 = 0x10     # Functional Parameter number 16.
+    MP = 0x00  # Main Parameter.
+    FP1 = 0x01  # Functional Parameter number 1.
+    FP2 = 0x02  # Functional Parameter number 2.
+    FP3 = 0x03  # Functional Parameter number 3.
+    FP4 = 0x04  # Functional Parameter number 4.
+    FP5 = 0x05  # Functional Parameter number 5.
+    FP6 = 0x06  # Functional Parameter number 6.
+    FP7 = 0x07  # Functional Parameter number 7.
+    FP8 = 0x08  # Functional Parameter number 8.
+    FP9 = 0x09  # Functional Parameter number 9.
+    FP10 = 0x0A  # Functional Parameter number 10.
+    FP11 = 0x0B  # Functional Parameter number 11.
+    FP12 = 0x0C  # Functional Parameter number 12.
+    FP13 = 0x0D  # Functional Parameter number 13.
+    FP14 = 0x0E  # Functional Parameter number 14.
+    FP15 = 0x0F  # Functional Parameter number 15.
+    FP16 = 0x10  # Functional Parameter number 16.
     NOT_USED = 0xFF  # Value to indicate Functional Parameter not used.
 
 
@@ -592,50 +599,88 @@ class StatusReply(Enum):
 
     # pylint: disable=line-too-long
 
-    UNKNOWN_STATUS_REPLY = 0x00                       # Used to indicate unknown reply.
-    COMMAND_COMPLETED_OK = 0x01                       # Indicates no errors detected.
-    NO_CONTACT = 0x02                                 # Indicates no communication to node.
-    MANUALLY_OPERATED = 0x03                          # Indicates manually operated by a user.
-    BLOCKED = 0x04                                    # Indicates node has been blocked by an object.
-    WRONG_SYSTEMKEY = 0x05                            # Indicates the node contains a wrong system key.
-    PRIORITY_LEVEL_LOCKED = 0x06                      # Indicates the node is locked on this priority level.
-    REACHED_WRONG_POSITION = 0x07                     # Indicates node has stopped in another position than expected.
-    ERROR_DURING_EXECUTION = 0x08                     # Indicates an error has occurred during execution of command.
-    NO_EXECUTION = 0x09                               # Indicates no movement of the node parameter.
-    CALIBRATING = 0x0A                                # Indicates the node is calibrating the parameters.
-    POWER_CONSUMPTION_TOO_HIGH = 0x0B                 # Indicates the node power consumption is too high.
-    POWER_CONSUMPTION_TOO_LOW = 0x0C                  # Indicates the node power consumption is too low.
-    LOCK_POSITION_OPEN = 0x0D                         # Indicates door lock errors. (Door open during lock command)
-    MOTION_TIME_TOO_LONG__COMMUNICATION_ENDED = 0x0E  # Indicates the target was not reached in time.
-    THERMAL_PROTECTION = 0x0F                         # Indicates the node has gone into thermal protection mode.
-    PRODUCT_NOT_OPERATIONAL = 0x10                    # Indicates the node is not currently operational.
-    FILTER_MAINTENANCE_NEEDED = 0x11                  # Indicates the filter needs maintenance.
-    BATTERY_LEVEL = 0x12                              # Indicates the battery level is low.
-    TARGET_MODIFIED = 0x13                            # Indicates the node has modified the target value of the command.
-    MODE_NOT_IMPLEMENTED = 0x14                       # Indicates this node does not support the mode received.
-    COMMAND_INCOMPATIBLE_TO_MOVEMENT = 0x15           # Indicates the node is unable to move in the right direction.
-    USER_ACTION = 0x16                                # Indicates dead bolt is manually locked during unlock command.
-    DEAD_BOLT_ERROR = 0x17                            # Indicates dead bolt error.
-    AUTOMATIC_CYCLE_ENGAGED = 0x18                    # Indicates the node has gone into automatic cycle mode.
-    WRONG_LOAD_CONNECTED = 0x19                       # Indicates wrong load on node.
-    COLOUR_NOT_REACHABLE = 0x1A                       # Indicates that node is unable to reach received colour code.
-    TARGET_NOT_REACHABLE = 0x1B                       # Indicates the node is unable to reach received target position.
-    BAD_INDEX_RECEIVED = 0x1C                         # Indicates io-protocol has received an invalid index.
-    COMMAND_OVERRULED = 0x1D                          # Indicates that the command was overruled by a new command.
-    NODE_WAITING_FOR_POWER = 0x1E                     # Indicates that the node reported waiting for power.
-    INFORMATION_CODE = 0xDF                           # Indicates an unknown error code received. (Hex code is shown on display)
-    PARAMETER_LIMITED = 0xE0                          # Indicates the parameter was limited by an unknown device. (Same as  LIMITATION_BY_UNKNOWN_DEVICE)
-    LIMITATION_BY_LOCAL_USER = 0xE1                   # Indicates the parameter was limited by local button.
-    LIMITATION_BY_USER = 0xE2                         # Indicates the parameter was limited by a remote control.
-    LIMITATION_BY_RAIN = 0xE3                         # Indicates the parameter was limited by a rain sensor.
-    LIMITATION_BY_TIMER = 0xE4                        # Indicates the parameter was limited by a timer.
-    LIMITATION_BY_UPS = 0xE6                          # Indicates the parameter was limited by a power supply.
-    LIMITATION_BY_UNKNOWN_DEVICE = 0xE7               # Indicates the parameter was limited by an unknown device. (Same as PARAMETER_LIMITED)
-    LIMITATION_BY_SAAC = 0xEA                         # Indicates the parameter was limited by a standalone automatic controller.
-    LIMITATION_BY_WIND = 0xEB                         # Indicates the parameter was limited by a wind sensor.
-    LIMITATION_BY_MYSELF = 0xEC                       # Indicates the parameter was limited by the node itself.
-    LIMITATION_BY_AUTOMATIC_CYCLE = 0xED              # Indicates the parameter was limited by an automatic cycle.
-    LIMITATION_BY_EMERGENCY = 0xEE                    # Indicates the parameter was limited by an emergency.
+    UNKNOWN_STATUS_REPLY = 0x00  # Used to indicate unknown reply.
+    COMMAND_COMPLETED_OK = 0x01  # Indicates no errors detected.
+    NO_CONTACT = 0x02  # Indicates no communication to node.
+    MANUALLY_OPERATED = 0x03  # Indicates manually operated by a user.
+    BLOCKED = 0x04  # Indicates node has been blocked by an object.
+    WRONG_SYSTEMKEY = 0x05  # Indicates the node contains a wrong system key.
+    PRIORITY_LEVEL_LOCKED = 0x06  # Indicates the node is locked on this priority level.
+    REACHED_WRONG_POSITION = (
+        0x07  # Indicates node has stopped in another position than expected.
+    )
+    ERROR_DURING_EXECUTION = (
+        0x08  # Indicates an error has occurred during execution of command.
+    )
+    NO_EXECUTION = 0x09  # Indicates no movement of the node parameter.
+    CALIBRATING = 0x0A  # Indicates the node is calibrating the parameters.
+    POWER_CONSUMPTION_TOO_HIGH = (
+        0x0B  # Indicates the node power consumption is too high.
+    )
+    POWER_CONSUMPTION_TOO_LOW = 0x0C  # Indicates the node power consumption is too low.
+    LOCK_POSITION_OPEN = (
+        0x0D  # Indicates door lock errors. (Door open during lock command)
+    )
+    MOTION_TIME_TOO_LONG__COMMUNICATION_ENDED = (
+        0x0E  # Indicates the target was not reached in time.
+    )
+    THERMAL_PROTECTION = (
+        0x0F  # Indicates the node has gone into thermal protection mode.
+    )
+    PRODUCT_NOT_OPERATIONAL = 0x10  # Indicates the node is not currently operational.
+    FILTER_MAINTENANCE_NEEDED = 0x11  # Indicates the filter needs maintenance.
+    BATTERY_LEVEL = 0x12  # Indicates the battery level is low.
+    TARGET_MODIFIED = (
+        0x13  # Indicates the node has modified the target value of the command.
+    )
+    MODE_NOT_IMPLEMENTED = (
+        0x14  # Indicates this node does not support the mode received.
+    )
+    COMMAND_INCOMPATIBLE_TO_MOVEMENT = (
+        0x15  # Indicates the node is unable to move in the right direction.
+    )
+    USER_ACTION = 0x16  # Indicates dead bolt is manually locked during unlock command.
+    DEAD_BOLT_ERROR = 0x17  # Indicates dead bolt error.
+    AUTOMATIC_CYCLE_ENGAGED = (
+        0x18  # Indicates the node has gone into automatic cycle mode.
+    )
+    WRONG_LOAD_CONNECTED = 0x19  # Indicates wrong load on node.
+    COLOUR_NOT_REACHABLE = (
+        0x1A  # Indicates that node is unable to reach received colour code.
+    )
+    TARGET_NOT_REACHABLE = (
+        0x1B  # Indicates the node is unable to reach received target position.
+    )
+    BAD_INDEX_RECEIVED = 0x1C  # Indicates io-protocol has received an invalid index.
+    COMMAND_OVERRULED = (
+        0x1D  # Indicates that the command was overruled by a new command.
+    )
+    NODE_WAITING_FOR_POWER = 0x1E  # Indicates that the node reported waiting for power.
+    INFORMATION_CODE = (
+        0xDF  # Indicates an unknown error code received. (Hex code is shown on display)
+    )
+    PARAMETER_LIMITED = 0xE0  # Indicates the parameter was limited by an unknown device. (Same as  LIMITATION_BY_UNKNOWN_DEVICE)
+    LIMITATION_BY_LOCAL_USER = (
+        0xE1  # Indicates the parameter was limited by local button.
+    )
+    LIMITATION_BY_USER = (
+        0xE2  # Indicates the parameter was limited by a remote control.
+    )
+    LIMITATION_BY_RAIN = 0xE3  # Indicates the parameter was limited by a rain sensor.
+    LIMITATION_BY_TIMER = 0xE4  # Indicates the parameter was limited by a timer.
+    LIMITATION_BY_UPS = 0xE6  # Indicates the parameter was limited by a power supply.
+    LIMITATION_BY_UNKNOWN_DEVICE = 0xE7  # Indicates the parameter was limited by an unknown device. (Same as PARAMETER_LIMITED)
+    LIMITATION_BY_SAAC = 0xEA  # Indicates the parameter was limited by a standalone automatic controller.
+    LIMITATION_BY_WIND = 0xEB  # Indicates the parameter was limited by a wind sensor.
+    LIMITATION_BY_MYSELF = (
+        0xEC  # Indicates the parameter was limited by the node itself.
+    )
+    LIMITATION_BY_AUTOMATIC_CYCLE = (
+        0xED  # Indicates the parameter was limited by an automatic cycle.
+    )
+    LIMITATION_BY_EMERGENCY = (
+        0xEE  # Indicates the parameter was limited by an emergency.
+    )
 
     @classmethod
     def _missing_(cls, value: object) -> Any:
@@ -647,16 +692,24 @@ class StatusId(Enum):
 
     # pylint: disable=line-too-long
 
-    STATUS_USER = 0x01             # The status is from a user activation.
-    STATUS_RAIN = 0x02             # The status is from a rain sensor activation.
-    STATUS_TIMER = 0x03            # The status is from a timer generated action.
-    STATUS_UPS = 0x05              # The status is from a UPS generated action.
-    STATUS_PROGRAM = 0x08          # The status is from an automatic program generated action. (SAAC)
-    STATUS_WIND = 0x09             # The status is from a Wind sensor generated action.
-    STATUS_MYSELF = 0x0A           # The status is from an actuator generated action.
-    STATUS_AUTOMATIC_CYCLE = 0x0B  # The status is from a automatic cycle generated action.
-    STATUS_EMERGENCY = 0x0C        # The status is from an emergency or a security generated action.
-    STATUS_UNKNOWN = 0xFF          # The status is from from an unknown command originator action.
+    STATUS_USER = 0x01  # The status is from a user activation.
+    STATUS_RAIN = 0x02  # The status is from a rain sensor activation.
+    STATUS_TIMER = 0x03  # The status is from a timer generated action.
+    STATUS_UPS = 0x05  # The status is from a UPS generated action.
+    STATUS_PROGRAM = (
+        0x08  # The status is from an automatic program generated action. (SAAC)
+    )
+    STATUS_WIND = 0x09  # The status is from a Wind sensor generated action.
+    STATUS_MYSELF = 0x0A  # The status is from an actuator generated action.
+    STATUS_AUTOMATIC_CYCLE = (
+        0x0B  # The status is from a automatic cycle generated action.
+    )
+    STATUS_EMERGENCY = (
+        0x0C  # The status is from an emergency or a security generated action.
+    )
+    STATUS_UNKNOWN = (
+        0xFF  # The status is from from an unknown command originator action.
+    )
 
     @classmethod
     def _missing_(cls, value: object) -> Any:
@@ -667,8 +720,10 @@ class RunStatus(Enum):
     """Enum Class for Node RunStatus."""
 
     EXECUTION_COMPLETED = 0  # Execution is completed with no errors.
-    EXECUTION_FAILED = 1     # Execution has failed. (Get specifics in the following error code)
-    EXECUTION_ACTIVE = 2     # Execution is still active.
+    EXECUTION_FAILED = (
+        1  # Execution has failed. (Get specifics in the following error code)
+    )
+    EXECUTION_ACTIVE = 2  # Execution is still active.
 
 
 class StatusType(Enum):

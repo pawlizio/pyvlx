@@ -1,4 +1,5 @@
 """Unit tests for PyVLX PasswordEnterRequest."""
+
 import unittest
 
 from pyvlx.api.frame_creation import frame_from_raw

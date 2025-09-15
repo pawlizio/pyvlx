@@ -1,4 +1,5 @@
 """Module for retrieving gateway state from API."""
+
 from typing import TYPE_CHECKING, Optional
 
 from pyvlx.const import GatewayState, GatewaySubState

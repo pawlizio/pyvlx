@@ -1,4 +1,5 @@
 """Module for reboot frame classes."""
+
 from pyvlx.const import Command
 
 from .frame import FrameBase
@@ -15,7 +16,7 @@ class FrameGatewayRebootRequest(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return '<{}/>'.format(type(self).__name__)
+        return "<{}/>".format(type(self).__name__)
 
 
 class FrameGatewayRebootConfirmation(FrameBase):
@@ -29,4 +30,4 @@ class FrameGatewayRebootConfirmation(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return '<{}/>'.format(type(self).__name__)
+        return "<{}/>".format(type(self).__name__)

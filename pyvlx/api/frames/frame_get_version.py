@@ -1,4 +1,5 @@
 """Module for get version frame classes."""
+
 from typing import Union
 
 from pyvlx.const import Command
@@ -21,7 +22,9 @@ class FrameGetVersionConfirmation(FrameBase):
 
     PAYLOAD_LEN = 9
 
-    def __init__(self, software_version: Union[bytes, str] = bytes(6), hardware_version: int = 0):
+    def __init__(
+        self, software_version: Union[bytes, str] = bytes(6), hardware_version: int = 0
+    ):
         """Init Frame."""
         super().__init__(Command.GW_GET_VERSION_CFM)
         if isinstance(software_version, str):
@@ -65,8 +68,9 @@ class FrameGetVersionConfirmation(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return (
-            '<{} software_version="{}" hardware_version="{}" product="{}"/>'.format(
-                type(self).__name__, self.software_version, self.hardware_version, self.product
-            )
+        return '<{} software_version="{}" hardware_version="{}" product="{}"/>'.format(
+            type(self).__name__,
+            self.software_version,
+            self.hardware_version,
+            self.product,
         )

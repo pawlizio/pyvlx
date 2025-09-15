@@ -13,13 +13,13 @@ class Scene:
     @classmethod
     def from_config(cls, pyvlx, item):
         """Read scene from configuration."""
-        name = item['name']
-        ident = item['id']
+        name = item["name"]
+        ident = item["id"]
         return cls(pyvlx, ident, name)
 
     async def run(self):
         """Run scene."""
-        await self.pyvlx.interface.api_call('scenes', 'run', {'id': self.ident})
+        await self.pyvlx.interface.api_call("scenes", "run", {"id": self.ident})
 
     def get_name(self):
         """Return name of object."""
@@ -27,11 +27,7 @@ class Scene:
 
     def __str__(self) -> str:
         """Return object as readable string."""
-        return '<Scene name="{0}" ' \
-            'id="{1}" />' \
-            .format(
-                self.name,
-                self.ident)
+        return '<Scene name="{0}" ' 'id="{1}" />'.format(self.name, self.ident)
 
     def __eq__(self, other):
         """Equal operator."""

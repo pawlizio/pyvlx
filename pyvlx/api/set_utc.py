@@ -1,4 +1,5 @@
 """Module for setting UTC time within gateway."""
+
 import time
 from typing import TYPE_CHECKING
 

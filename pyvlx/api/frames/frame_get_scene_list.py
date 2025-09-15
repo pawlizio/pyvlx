@@ -1,4 +1,5 @@
 """Module for get scene list frame classes."""
+
 from typing import List, Tuple
 
 from pyvlx.const import Command
@@ -38,9 +39,7 @@ class FrameGetSceneListConfirmation(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return '<{} count_scenes="{}"/>'.format(
-            type(self).__name__, self.count_scenes
-        )
+        return '<{} count_scenes="{}"/>'.format(type(self).__name__, self.count_scenes)
 
 
 class FrameGetSceneListNotification(FrameBase):

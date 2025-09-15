@@ -1,4 +1,5 @@
 """Unit tests string_helper module."""
+
 import unittest
 
 from pyvlx.exception import PyVLXException

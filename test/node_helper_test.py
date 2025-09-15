@@ -1,4 +1,5 @@
 """Unit tests _helper module."""
+
 import unittest
 from unittest.mock import MagicMock
 

@@ -1,4 +1,5 @@
 """Module for configuration."""
+
 from typing import TYPE_CHECKING, Any, Optional, cast
 
 import yaml
@@ -15,12 +16,14 @@ class Config:
 
     DEFAULT_PORT = 51200
 
-    def __init__(self,
-                 pyvlx: "PyVLX",
-                 path: Optional[str] = None,
-                 host: Optional[str] = None,
-                 password: Optional[str] = None,
-                 port: Optional[int] = None):
+    def __init__(
+        self,
+        pyvlx: "PyVLX",
+        path: Optional[str] = None,
+        host: Optional[str] = None,
+        password: Optional[str] = None,
+        port: Optional[int] = None,
+    ):
         """Initialize Config class."""
         self.pyvlx = pyvlx
         self.host = host
@@ -41,7 +44,9 @@ class Config:
                 if "port" in doc["config"]:
                     self.port = doc["config"]["port"]
         except FileNotFoundError as not_found:
-            raise PyVLXException("file does not exist: {0}".format(not_found)) from not_found
+            raise PyVLXException(
+                "file does not exist: {0}".format(not_found)
+            ) from not_found
 
     @staticmethod
     def test_configuration(doc: Any, path: str) -> None:

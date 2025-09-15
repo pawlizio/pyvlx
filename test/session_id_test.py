@@ -1,4 +1,5 @@
 """Test for slip helper functions."""
+
 import unittest
 
 from pyvlx.api.session_id import get_new_session_id, set_session_id

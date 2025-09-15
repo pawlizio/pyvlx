@@ -1,4 +1,5 @@
 """Module for handling the login to API."""
+
 from typing import TYPE_CHECKING
 
 from pyvlx.log import PYVLXLOG

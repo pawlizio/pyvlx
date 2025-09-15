@@ -1,4 +1,5 @@
 """Unit tests for frame module."""
+
 import unittest
 
 from pyvlx import PyVLXException

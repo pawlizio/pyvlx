@@ -1,4 +1,5 @@
 """Module for sending command to gw."""
+
 from enum import Enum
 from typing import Optional
 
@@ -13,11 +14,11 @@ class FrameActivateSceneRequest(FrameBase):
     PAYLOAD_LEN = 6
 
     def __init__(
-            self,
-            scene_id: Optional[int] = None,
-            session_id: Optional[int] = None,
-            originator: Originator = Originator.USER,
-            velocity: Velocity = Velocity.DEFAULT,
+        self,
+        scene_id: Optional[int] = None,
+        session_id: Optional[int] = None,
+        originator: Originator = Originator.USER,
+        velocity: Velocity = Velocity.DEFAULT,
     ):
         """Init Frame."""
         super().__init__(Command.GW_ACTIVATE_SCENE_REQ)
@@ -48,8 +49,14 @@ class FrameActivateSceneRequest(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return '<{} scene_id="{}" session_id="{}" originator="{}" velocity="{}"/>'.format(
-            type(self).__name__, self.scene_id, self.session_id, self.originator, self.velocity
+        return (
+            '<{} scene_id="{}" session_id="{}" originator="{}" velocity="{}"/>'.format(
+                type(self).__name__,
+                self.scene_id,
+                self.session_id,
+                self.originator,
+                self.velocity,
+            )
         )
 
 
@@ -66,7 +73,11 @@ class FrameActivateSceneConfirmation(FrameBase):
 
     PAYLOAD_LEN = 3
 
-    def __init__(self, session_id: Optional[int] = None, status: Optional[ActivateSceneConfirmationStatus] = None):
+    def __init__(
+        self,
+        session_id: Optional[int] = None,
+        status: Optional[ActivateSceneConfirmationStatus] = None,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_ACTIVATE_SCENE_CFM)
         self.session_id = session_id

@@ -1,4 +1,5 @@
 """Unit tests for FrameNodeStatePositionChangedNotification."""
+
 import unittest
 from datetime import datetime
 

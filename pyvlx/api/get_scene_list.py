@@ -1,4 +1,5 @@
 """Module for retrieving scene list from API."""
+
 from typing import TYPE_CHECKING, List, Optional, Tuple
 
 from pyvlx.log import PYVLXLOG

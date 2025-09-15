@@ -1,4 +1,5 @@
 """Unit tests for PyVLX PasswordChangeRequest."""
+
 import unittest
 
 from pyvlx.api.frame_creation import frame_from_raw
@@ -25,25 +26,34 @@ class TestFramePasswordChange(unittest.TestCase):
 
     def test_bytes_long_newpw(self):
         """Test FramePasswordChangeRequest with long new password."""
-        frame = FramePasswordChangeRequest(currentpassword="fnord", newpassword="x" * 32)
+        frame = FramePasswordChangeRequest(
+            currentpassword="fnord", newpassword="x" * 32
+        )
         self.assertEqual(
-            bytes(frame), b"\x00C0\x02fnord\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
-            + b"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\x00"
+            bytes(frame),
+            b"\x00C0\x02fnord\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"
+            + b"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\x00",
         )
 
     def test_bytes_long_oldpw(self):
         """Test FramePasswordChangeRequest with long old password."""
-        frame = FramePasswordChangeRequest(currentpassword="x" * 32, newpassword="bfeld")
+        frame = FramePasswordChangeRequest(
+            currentpassword="x" * 32, newpassword="bfeld"
+        )
         self.assertEqual(
-            bytes(frame), b"\x00C0\x02xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxbfeld\x00\x00\x00"
-            + b"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x18"
+            bytes(frame),
+            b"\x00C0\x02xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxbfeld\x00\x00\x00"
+            + b"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x18",
         )
 
     def test_bytes_long_bothpw(self):
         """Test FramePasswordChangeRequest with long passwords."""
-        frame = FramePasswordChangeRequest(currentpassword="x" * 32, newpassword="y" * 32)
+        frame = FramePasswordChangeRequest(
+            currentpassword="x" * 32, newpassword="y" * 32
+        )
         self.assertEqual(
-            bytes(frame), b"\x00C0\x02xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyq"
+            bytes(frame),
+            b"\x00C0\x02xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyq",
         )
 
     def test_frame_from_raw(self):
@@ -66,18 +76,36 @@ class TestFramePasswordChange(unittest.TestCase):
         with self.assertRaises(PyVLXException):
             bytes(FramePasswordChangeRequest(currentpassword="fnord"))
         with self.assertRaises(PyVLXException):
-            bytes(FramePasswordChangeRequest(currentpassword="fnord", newpassword="x" * 33))
+            bytes(
+                FramePasswordChangeRequest(
+                    currentpassword="fnord", newpassword="x" * 33
+                )
+            )
         with self.assertRaises(PyVLXException):
-            bytes(FramePasswordChangeRequest(newpassword="fnord", currentpassword="x" * 33))
+            bytes(
+                FramePasswordChangeRequest(
+                    newpassword="fnord", currentpassword="x" * 33
+                )
+            )
         with self.assertRaises(PyVLXException):
-            bytes(FramePasswordChangeRequest(newpassword="x" * 33, currentpassword="x" * 33))
+            bytes(
+                FramePasswordChangeRequest(
+                    newpassword="x" * 33, currentpassword="x" * 33
+                )
+            )
 
     def test_str(self):
         """Test string representation of FramePasswordChangeRequest."""
         frame = FramePasswordChangeRequest(currentpassword="fnord", newpassword="bfeld")
-        self.assertEqual(str(frame), '<FramePasswordChangeRequest currentpassword="fn****" newpassword="bf****"/>')
+        self.assertEqual(
+            str(frame),
+            '<FramePasswordChangeRequest currentpassword="fn****" newpassword="bf****"/>',
+        )
 
     def test_str_no_password(self):
         """Test string representation of FramePasswordChangeRequest with no password."""
         frame = FramePasswordChangeRequest()
-        self.assertEqual(str(frame), '<FramePasswordChangeRequest currentpassword="None" newpassword="None"/>')
+        self.assertEqual(
+            str(frame),
+            '<FramePasswordChangeRequest currentpassword="None" newpassword="None"/>',
+        )

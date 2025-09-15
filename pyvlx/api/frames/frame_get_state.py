@@ -1,4 +1,5 @@
 """Frames for receiving state from gateway."""
+
 from pyvlx.const import Command, GatewayState, GatewaySubState
 
 from .frame import FrameBase
@@ -20,9 +21,9 @@ class FrameGetStateConfirmation(FrameBase):
     PAYLOAD_LEN = 6
 
     def __init__(
-            self,
-            gateway_state: GatewayState = GatewayState.TEST_MODE,
-            gateway_sub_state: GatewaySubState = GatewaySubState.IDLE,
+        self,
+        gateway_state: GatewayState = GatewayState.TEST_MODE,
+        gateway_sub_state: GatewaySubState = GatewaySubState.IDLE,
     ):
         """Init Frame."""
         super().__init__(Command.GW_GET_STATE_CFM)

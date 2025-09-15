@@ -1,4 +1,5 @@
 """Module for sending command to gw."""
+
 import struct
 from datetime import datetime
 

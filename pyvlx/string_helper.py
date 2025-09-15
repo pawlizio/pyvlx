@@ -1,4 +1,5 @@
 """Module for string encoding, decoding."""
+
 from .exception import PyVLXException
 
 

@@ -1,4 +1,5 @@
 """Module for handling the TCP connection with Gateway."""
+
 import asyncio
 import ssl
 import sys
@@ -109,7 +110,9 @@ class Connection:
 
     async def connect(self) -> None:
         """Connect to gateway via SSL."""
-        tcp_client = TCPTransport(self.frame_received_cb, connection_lost_cb=self.on_connection_lost)
+        tcp_client = TCPTransport(
+            self.frame_received_cb, connection_lost_cb=self.on_connection_lost
+        )
         assert self.config.host is not None
         self.transport, _ = await self.loop.create_connection(
             lambda: tcp_client,
@@ -140,7 +143,9 @@ class Connection:
         """Register connection closed callback."""
         self.connection_closed_cbs.append(callback)
 
-    def unregister_connection_closed_cb(self, callback: Callable[[], Coroutine]) -> None:
+    def unregister_connection_closed_cb(
+        self, callback: Callable[[], Coroutine]
+    ) -> None:
         """Unregister connection closed callback."""
         self.connection_closed_cbs.remove(callback)
 
@@ -148,7 +153,9 @@ class Connection:
         """Register connection opened callback."""
         self.connection_opened_cbs.append(callback)
 
-    def unregister_connection_opened_cb(self, callback: Callable[[], Coroutine]) -> None:
+    def unregister_connection_opened_cb(
+        self, callback: Callable[[], Coroutine]
+    ) -> None:
         """Unregister connection opened callback."""
         self.connection_opened_cbs.remove(callback)
 

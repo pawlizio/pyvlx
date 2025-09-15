@@ -1,4 +1,5 @@
 """Module for discover nodes requests."""
+
 from pyvlx.const import Command, NodeType
 
 from .frame import FrameBase
@@ -59,6 +60,5 @@ class FrameDiscoverNodesNotification(FrameBase):
     def __str__(self) -> str:
         """Return human readable string."""
         return '<{} payload="{}"/>'.format(
-            type(self).__name__,
-            ':'.join('{:02x}'.format(c) for c in self.payload)
+            type(self).__name__, ":".join("{:02x}".format(c) for c in self.payload)
         )

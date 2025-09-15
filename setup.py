@@ -1,4 +1,5 @@
 """Module for setting up PyVLX pypi object."""
+
 import os
 from os import path
 
@@ -39,11 +40,11 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
     ],
-    packages=find_packages(exclude=['test*']),
+    packages=find_packages(exclude=["test*"]),
     package_data={
         "pyvlx": ["py.typed"],
     },
-    python_requires='>=3.11',
+    python_requires=">=3.11",
     install_requires=REQUIRES,
     keywords="velux KLF 200 home automation",
     zip_safe=False,

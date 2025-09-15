@@ -1,5 +1,5 @@
-
 """Module for get local time classes."""
+
 from typing import List, Optional
 
 from pyvlx.const import Command, LimitationType, Originator, Priority
@@ -12,10 +12,12 @@ class FrameGetLimitationStatus(FrameBase):
 
     PAYLOAD_LEN = 25
 
-    def __init__(self,
-                 node_ids: Optional[List[int]] = None,
-                 session_id: Optional[int] = None,
-                 limitation_type: LimitationType = LimitationType.MIN_LIMITATION):
+    def __init__(
+        self,
+        node_ids: Optional[List[int]] = None,
+        session_id: Optional[int] = None,
+        limitation_type: LimitationType = LimitationType.MIN_LIMITATION,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_GET_LIMITATION_STATUS_REQ)
         self.session_id = session_id
@@ -38,8 +40,10 @@ class FrameGetLimitationStatus(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return f'<{type(self).__name__} node_ids="{self.node_ids}" ' \
-               f'session_id="{self.session_id}" originator="{self.originator}" />'
+        return (
+            f'<{type(self).__name__} node_ids="{self.node_ids}" '
+            f'session_id="{self.session_id}" originator="{self.originator}" />'
+        )
 
 
 class FrameGetLimitationStatusConfirmation(FrameBase):
@@ -120,8 +124,12 @@ class FrameGetLimitationStatusNotification(FrameBase):
         return (
             '<{} node_id="{}" session_id="{}" min_value="{!r}" '
             'max_value="{!r}" originator="{}" limit_time="{}"/>'.format(
-                type(self).__name__, self.node_id, self.session_id,
-                self.min_value, self.max_value, self.limit_originator,
-                self.limit_time
+                type(self).__name__,
+                self.node_id,
+                self.session_id,
+                self.min_value,
+                self.max_value,
+                self.limit_originator,
+                self.limit_time,
             )
         )

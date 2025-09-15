@@ -1,4 +1,5 @@
 """Unit tests for AliasArray module."""
+
 import unittest
 
 from pyvlx.api.frames.alias_array import AliasArray

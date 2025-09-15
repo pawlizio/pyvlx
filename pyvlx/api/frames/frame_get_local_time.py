@@ -1,4 +1,5 @@
 """Module for get local time classes."""
+
 from pyvlx.const import Command
 from pyvlx.dataobjects import DtoLocalTime
 
@@ -35,4 +36,4 @@ class FrameGetLocalTimeConfirmation(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return '<{0}>{1}</{0}>'.format(type(self).__name__, self.time)
+        return "<{0}>{1}</{0}>".format(type(self).__name__, self.time)

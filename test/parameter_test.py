@@ -1,4 +1,5 @@
 """Test for Position class."""
+
 import unittest
 
 from pyvlx import Parameter, Position
@@ -10,9 +11,9 @@ class TestParameterPosition(unittest.TestCase):
 
     def test_from_parameter(self) -> None:
         """Test from parameter from another parameter."""
-        param1 = Parameter(raw=b'\xC8\x00')
-        param2 = Parameter(raw=b'\x00\x00')
-        wrong_object = b'\x00\x00'
+        param1 = Parameter(raw=b"\xC8\x00")
+        param2 = Parameter(raw=b"\x00\x00")
+        wrong_object = b"\x00\x00"
         with self.assertRaises(PyVLXException):
             Parameter.from_parameter(self=param1, parameter=wrong_object)  # type: ignore
         Parameter.from_parameter(self=param1, parameter=param2)
@@ -20,7 +21,7 @@ class TestParameterPosition(unittest.TestCase):
 
     def test_from_int(self) -> None:
         """Test from int output from parameter int input."""
-        wrong_object = b'\x00\x00'
+        wrong_object = b"\x00\x00"
         with self.assertRaises(PyVLXException):
             Parameter.from_int(wrong_object)  # type: ignore
         not_valid_int = 100.3
@@ -29,11 +30,11 @@ class TestParameterPosition(unittest.TestCase):
         int_out_of_range = Parameter.MAX + 1
         with self.assertRaises(PyVLXException):
             Parameter.from_int(int_out_of_range)  # type: ignore
-        self.assertEqual(Parameter.from_int(51200), b'\xc8\x00')
+        self.assertEqual(Parameter.from_int(51200), b"\xc8\x00")
 
     def test_to_int(self) -> None:
         """Test from int output from parameter int input."""
-        raw = b'\xc8\x00'
+        raw = b"\xc8\x00"
         self.assertEqual(Parameter.to_int(raw=raw), 51200)
 
     def test_is_valid_int(self) -> None:
@@ -50,19 +51,19 @@ class TestParameterPosition(unittest.TestCase):
         with self.assertRaises(PyVLXException):
             Parameter.from_raw(raw=0xC800)  # type: ignore
         with self.assertRaises(PyVLXException):
-            Parameter.from_raw(raw=b'\x00')
-        self.assertEqual(Parameter.from_raw(raw=b'\xd2\x01'), b'\xf7\xff')
-        self.assertEqual(Parameter.from_raw(raw=b'\xd2\x01'), b'\xf7\xff')
-        self.assertEqual(Parameter.from_raw(raw=b'\xd1\x01'), b'\xf7\xff')
-        self.assertEqual(Parameter.from_raw(raw=b'\xd4\x01'), b'\xf7\xff')
-        self.assertEqual(Parameter.from_raw(raw=b'\xd8\x01'), b'\xf7\xff')
-        self.assertNotEqual(Parameter.from_raw(raw=b'\xd2\x00'), b'\xf7\xff')
-        self.assertNotEqual(Parameter.from_raw(raw=b'\xd2\x00'), b'\xf7\xff')
-        self.assertNotEqual(Parameter.from_raw(raw=b'\xd1\x00'), b'\xf7\xff')
-        self.assertNotEqual(Parameter.from_raw(raw=b'\xd4\x00'), b'\xf7\xff')
-        self.assertEqual(Parameter.from_raw(raw=b'\x00\x00'), b'\x00\x00')
-        self.assertEqual(Parameter.from_raw(raw=b'\xc8\x00'), b'\xc8\x00')
-        self.assertEqual(Parameter.from_raw(raw=b'\xc8\x01'), b'\xf7\xff')
+            Parameter.from_raw(raw=b"\x00")
+        self.assertEqual(Parameter.from_raw(raw=b"\xd2\x01"), b"\xf7\xff")
+        self.assertEqual(Parameter.from_raw(raw=b"\xd2\x01"), b"\xf7\xff")
+        self.assertEqual(Parameter.from_raw(raw=b"\xd1\x01"), b"\xf7\xff")
+        self.assertEqual(Parameter.from_raw(raw=b"\xd4\x01"), b"\xf7\xff")
+        self.assertEqual(Parameter.from_raw(raw=b"\xd8\x01"), b"\xf7\xff")
+        self.assertNotEqual(Parameter.from_raw(raw=b"\xd2\x00"), b"\xf7\xff")
+        self.assertNotEqual(Parameter.from_raw(raw=b"\xd2\x00"), b"\xf7\xff")
+        self.assertNotEqual(Parameter.from_raw(raw=b"\xd1\x00"), b"\xf7\xff")
+        self.assertNotEqual(Parameter.from_raw(raw=b"\xd4\x00"), b"\xf7\xff")
+        self.assertEqual(Parameter.from_raw(raw=b"\x00\x00"), b"\x00\x00")
+        self.assertEqual(Parameter.from_raw(raw=b"\xc8\x00"), b"\xc8\x00")
+        self.assertEqual(Parameter.from_raw(raw=b"\xc8\x01"), b"\xf7\xff")
 
     def test_from_to_percent(self) -> None:
         """Test position percent output from position percent input."""
@@ -91,10 +92,12 @@ class TestParameterPosition(unittest.TestCase):
 
     def test_equal(self) -> None:
         """Test from parameter from another parameter."""
-        param1 = Parameter(raw=b'\xC8\x00')
-        param2 = Parameter(raw=b'\x00\x00')
-        param3 = Parameter(raw=b'\xC8\x00')
-        wrong_object = b'\x00\x00'
-        self.assertEqual(param1.__eq__(wrong_object), NotImplemented)  # pylint: disable=C2801
+        param1 = Parameter(raw=b"\xC8\x00")
+        param2 = Parameter(raw=b"\x00\x00")
+        param3 = Parameter(raw=b"\xC8\x00")
+        wrong_object = b"\x00\x00"
+        self.assertEqual(
+            param1.__eq__(wrong_object), NotImplemented
+        )  # pylint: disable=C2801
         self.assertFalse(param1 == param2)
         self.assertTrue(param1 == param3)

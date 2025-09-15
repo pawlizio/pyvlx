@@ -1,4 +1,5 @@
 """Module for Opening devices."""
+
 import asyncio
 import datetime
 from asyncio import Task

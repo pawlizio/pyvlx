@@ -1,4 +1,5 @@
 """Just a demo of the new PyVLX module."""
+
 import asyncio
 import logging
 
@@ -14,7 +15,7 @@ async def main(loop):
     PYVLXLOG.addHandler(stream_handler)
 
     # Connecting to KLF 200
-    pyvlx = PyVLX('pyvlx.yaml', loop=loop)
+    pyvlx = PyVLX("pyvlx.yaml", loop=loop)
     await pyvlx.load_scenes()
     await pyvlx.load_nodes()
 
@@ -26,7 +27,7 @@ async def main(loop):
     await pyvlx.disconnect()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # pylint: disable=invalid-name
     LOOP = asyncio.get_event_loop()
     LOOP.run_until_complete(main(LOOP))

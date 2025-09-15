@@ -1,4 +1,5 @@
 """Module for retrieving firmware version from API."""
+
 from typing import TYPE_CHECKING
 
 from pyvlx.dataobjects import DtoVersion
@@ -24,8 +25,12 @@ class GetVersion(ApiEvent):
         """Handle incoming API frame, return True if this was the expected frame."""
         if not isinstance(frame, FrameGetVersionConfirmation):
             return False
-        self.version = DtoVersion(frame.software_version, frame.hardware_version,
-                                  frame.product_group, frame.product_type)
+        self.version = DtoVersion(
+            frame.software_version,
+            frame.hardware_version,
+            frame.product_group,
+            frame.product_type,
+        )
         self.success = True
         return True
 

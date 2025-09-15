@@ -1,4 +1,5 @@
 """Frames for receiving network setup from gateway."""
+
 from pyvlx.const import Command, DHCPParameter
 
 from .frame import FrameBase
@@ -19,8 +20,13 @@ class FrameGetNetworkSetupConfirmation(FrameBase):
 
     PAYLOAD_LEN = 13
 
-    def __init__(self, ipaddress: bytes = bytes(4), netmask: bytes = bytes(4), gateway: bytes = bytes(4),
-                 dhcp: DHCPParameter = DHCPParameter.DISABLE):
+    def __init__(
+        self,
+        ipaddress: bytes = bytes(4),
+        netmask: bytes = bytes(4),
+        gateway: bytes = bytes(4),
+        dhcp: DHCPParameter = DHCPParameter.DISABLE,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_GET_NETWORK_SETUP_CFM)
         self._ipaddress = ipaddress
@@ -61,4 +67,5 @@ class FrameGetNetworkSetupConfirmation(FrameBase):
     def __str__(self) -> str:
         """Return human readable string."""
         return '<{} ipaddress="{}" netmask="{}" gateway="{}" dhcp="{}"/>'.format(
-            type(self).__name__, self.ipaddress, self.netmask, self.gateway, self.dhcp)
+            type(self).__name__, self.ipaddress, self.netmask, self.gateway, self.dhcp
+        )

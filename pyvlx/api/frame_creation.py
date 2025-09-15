@@ -1,4 +1,5 @@
 """Helper module for creating a frame out of raw data."""
+
 from typing import Optional
 
 from pyvlx.const import Command

@@ -1,4 +1,5 @@
 """Module for storing alias array."""
+
 from typing import List, Optional, Tuple
 
 from pyvlx.exception import PyVLXException

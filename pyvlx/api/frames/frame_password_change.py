@@ -1,4 +1,5 @@
 """Module for password enter frame classes."""
+
 from enum import Enum
 from typing import Optional
 
@@ -15,7 +16,9 @@ class FramePasswordChangeRequest(FrameBase):
     MAX_SIZE = 32
     PAYLOAD_LEN = 64
 
-    def __init__(self, currentpassword: Optional[str] = None, newpassword: Optional[str] = None):
+    def __init__(
+        self, currentpassword: Optional[str] = None, newpassword: Optional[str] = None
+    ):
         """Init Frame."""
         super().__init__(Command.GW_PASSWORD_CHANGE_REQ)
         self.currentpassword = currentpassword
@@ -32,8 +35,9 @@ class FramePasswordChangeRequest(FrameBase):
         if len(self.newpassword) > self.MAX_SIZE:
             raise PyVLXException("newpassword is too long")
 
-        return string_to_bytes(self.currentpassword,
-                               self.MAX_SIZE)+string_to_bytes(self.newpassword, self.MAX_SIZE)
+        return string_to_bytes(self.currentpassword, self.MAX_SIZE) + string_to_bytes(
+            self.newpassword, self.MAX_SIZE
+        )
 
     def from_payload(self, payload: bytes) -> None:
         """Init frame from binary data."""
@@ -43,13 +47,16 @@ class FramePasswordChangeRequest(FrameBase):
     def __str__(self) -> str:
         """Return human readable string."""
         currentpassword_esc = (
-            None if self.currentpassword is None else "{}****".format(self.currentpassword[:2])
+            None
+            if self.currentpassword is None
+            else "{}****".format(self.currentpassword[:2])
         )
         newpassword_esc = (
             None if self.newpassword is None else "{}****".format(self.newpassword[:2])
         )
-        return ('<{} currentpassword="{}" newpassword="{}"/>'
-                .format(type(self).__name__, currentpassword_esc, newpassword_esc))
+        return '<{} currentpassword="{}" newpassword="{}"/>'.format(
+            type(self).__name__, currentpassword_esc, newpassword_esc
+        )
 
 
 class PasswordChangeConfirmationStatus(Enum):
@@ -64,7 +71,10 @@ class FramePasswordChangeConfirmation(FrameBase):
 
     PAYLOAD_LEN = 1
 
-    def __init__(self, status: PasswordChangeConfirmationStatus = PasswordChangeConfirmationStatus.SUCCESSFUL):
+    def __init__(
+        self,
+        status: PasswordChangeConfirmationStatus = PasswordChangeConfirmationStatus.SUCCESSFUL,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_PASSWORD_CHANGE_CFM)
         self.status = status

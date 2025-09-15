@@ -1,4 +1,5 @@
 """Test for Position class."""
+
 import unittest
 
 from pyvlx import (
@@ -49,10 +50,22 @@ class TestPosition(unittest.TestCase):
 
     def test_fallback_to_unknown(self) -> None:
         """Test fallback to unknown."""
-        self.assertEqual(Parameter(raw=b"\xC8\x01"), Parameter(raw=Parameter.from_int(Parameter.UNKNOWN_VALUE)))
-        self.assertEqual(Parameter(raw=b"\xC9\x00"), Parameter(raw=Parameter.from_int(Parameter.UNKNOWN_VALUE)))
-        self.assertEqual(Parameter(raw=b"\xD8\x00"), Parameter(raw=Parameter.from_int(Parameter.UNKNOWN_VALUE)))
-        self.assertEqual(Parameter(raw=b"\xfe\x01"), Parameter(raw=Parameter.from_int(Parameter.UNKNOWN_VALUE)))
+        self.assertEqual(
+            Parameter(raw=b"\xC8\x01"),
+            Parameter(raw=Parameter.from_int(Parameter.UNKNOWN_VALUE)),
+        )
+        self.assertEqual(
+            Parameter(raw=b"\xC9\x00"),
+            Parameter(raw=Parameter.from_int(Parameter.UNKNOWN_VALUE)),
+        )
+        self.assertEqual(
+            Parameter(raw=b"\xD8\x00"),
+            Parameter(raw=Parameter.from_int(Parameter.UNKNOWN_VALUE)),
+        )
+        self.assertEqual(
+            Parameter(raw=b"\xfe\x01"),
+            Parameter(raw=Parameter.from_int(Parameter.UNKNOWN_VALUE)),
+        )
 
     def test_exception(self) -> None:
         """Test wrong initialization of Position."""

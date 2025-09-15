@@ -26,7 +26,9 @@ class GetProtocolVersion(ApiEvent):
         """Handle incoming API frame, return True if this was the expected frame."""
         if not isinstance(frame, FrameGetProtocolVersionConfirmation):
             return False
-        self.protocolversion = DtoProtocolVersion(frame.major_version, frame.minor_version)
+        self.protocolversion = DtoProtocolVersion(
+            frame.major_version, frame.minor_version
+        )
         self.success = True
         return True
 
@@ -37,4 +39,6 @@ class GetProtocolVersion(ApiEvent):
     @property
     def version(self) -> str:
         """Return Protocol Version as human readable string."""
-        return "{}.{}".format(self.protocolversion.majorversion, self.protocolversion.minorversion)
+        return "{}.{}".format(
+            self.protocolversion.majorversion, self.protocolversion.minorversion
+        )

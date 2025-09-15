@@ -1,4 +1,5 @@
 """Module for Frames."""
+
 import struct
 
 from pyvlx.const import Command

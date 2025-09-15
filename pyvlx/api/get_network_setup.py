@@ -1,4 +1,5 @@
 """Module for retrieving gateway state from API."""
+
 from typing import TYPE_CHECKING
 
 from pyvlx.dataobjects import DtoNetworkSetup
@@ -26,7 +27,8 @@ class GetNetworkSetup(ApiEvent):
             return False
         self.success = True
         self.networksetup = DtoNetworkSetup(
-            frame.ipaddress, frame.gateway, frame.netmask, frame.dhcp)
+            frame.ipaddress, frame.gateway, frame.netmask, frame.dhcp
+        )
         return True
 
     def request_frame(self) -> FrameGetNetworkSetupRequest:

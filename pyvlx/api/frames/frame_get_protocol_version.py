@@ -1,4 +1,5 @@
 """Module for get version frame classes."""
+
 from pyvlx.const import Command
 
 from .frame import FrameBase
@@ -48,6 +49,4 @@ class FrameGetProtocolVersionConfirmation(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return '<{} version="{}"/>'.format(
-            type(self).__name__, self.version
-        )
+        return '<{} version="{}"/>'.format(type(self).__name__, self.version)

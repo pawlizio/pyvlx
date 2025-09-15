@@ -1,4 +1,5 @@
 """Module for get node information from gateway."""
+
 import struct
 from datetime import datetime
 

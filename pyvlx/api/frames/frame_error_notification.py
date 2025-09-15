@@ -1,4 +1,5 @@
 """Module for error notification."""
+
 from enum import Enum
 
 from pyvlx.const import Command

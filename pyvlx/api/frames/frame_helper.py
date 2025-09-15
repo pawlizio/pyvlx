@@ -1,4 +1,5 @@
 """Helper module for SLIP Frames."""
+
 from typing import Tuple
 
 from pyvlx.const import Command
@@ -36,5 +37,7 @@ def extract_from_frame(data: bytes) -> Tuple[Command, bytes]:
     try:
         command = Command(data[2] * 256 + data[3])
     except ValueError as type_error:
-        raise PyVLXException("could_not_extract_from_frame_command", data=data) from type_error
+        raise PyVLXException(
+            "could_not_extract_from_frame_command", data=data
+        ) from type_error
     return command, payload

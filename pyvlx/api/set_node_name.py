@@ -1,4 +1,5 @@
 """Module for changing a node name."""
+
 from typing import TYPE_CHECKING
 
 from .api_event import ApiEvent

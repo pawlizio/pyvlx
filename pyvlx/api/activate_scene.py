@@ -1,4 +1,5 @@
 """Module for retrieving scene list from API."""
+
 from typing import TYPE_CHECKING, Optional
 
 from .api_event import ApiEvent
@@ -17,7 +18,11 @@ class ActivateScene(ApiEvent):
     """Class for activating scene via API."""
 
     def __init__(
-            self, pyvlx: "PyVLX", scene_id: int, wait_for_completion: bool = True, timeout_in_seconds: int = 60
+        self,
+        pyvlx: "PyVLX",
+        scene_id: int,
+        wait_for_completion: bool = True,
+        timeout_in_seconds: int = 60,
     ):
         """Initialize SceneList class."""
         super().__init__(pyvlx=pyvlx, timeout_in_seconds=timeout_in_seconds)
@@ -29,28 +34,28 @@ class ActivateScene(ApiEvent):
     async def handle_frame(self, frame: FrameBase) -> bool:
         """Handle incoming API frame, return True if this was the expected frame."""
         if (
-                isinstance(frame, FrameActivateSceneConfirmation)
-                and frame.session_id == self.session_id
+            isinstance(frame, FrameActivateSceneConfirmation)
+            and frame.session_id == self.session_id
         ):
             if frame.status == ActivateSceneConfirmationStatus.ACCEPTED:
                 self.success = True
             return not self.wait_for_completion
         if (
-                isinstance(frame, FrameCommandRemainingTimeNotification)
-                and frame.session_id == self.session_id
+            isinstance(frame, FrameCommandRemainingTimeNotification)
+            and frame.session_id == self.session_id
         ):
             # Ignoring FrameCommandRemainingTimeNotification
             return False
         if (
-                isinstance(frame, FrameCommandRunStatusNotification)
-                and frame.session_id == self.session_id
+            isinstance(frame, FrameCommandRunStatusNotification)
+            and frame.session_id == self.session_id
         ):
             # At the moment I don't reall understand what the FrameCommandRunStatusNotification is good for.
             # Ignoring these packets for now
             return False
         if (
-                isinstance(frame, FrameSessionFinishedNotification)
-                and frame.session_id == self.session_id
+            isinstance(frame, FrameSessionFinishedNotification)
+            and frame.session_id == self.session_id
         ):
             return True
         return False

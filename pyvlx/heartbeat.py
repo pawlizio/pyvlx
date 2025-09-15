@@ -1,4 +1,5 @@
 """Module for sending get state requests to API in regular periods."""
+
 import asyncio
 from typing import TYPE_CHECKING, Any
 

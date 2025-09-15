@@ -1,4 +1,5 @@
 """Module for storing nodes."""
+
 from typing import TYPE_CHECKING, Iterator, List, Optional, Union
 
 from .api import GetAllNodesInformation, GetNodeInformation

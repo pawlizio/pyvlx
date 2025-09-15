@@ -1,4 +1,5 @@
 """Test for slip helper functions."""
+
 import unittest
 from typing import Any
 

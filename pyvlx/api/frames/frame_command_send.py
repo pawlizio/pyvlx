@@ -1,4 +1,5 @@
 """Module for sending command to gw."""
+
 from enum import Enum
 from typing import List, Optional
 
@@ -15,13 +16,13 @@ class FrameCommandSendRequest(FrameBase):
     PAYLOAD_LEN = 66
 
     def __init__(
-            self,
-            node_ids: Optional[List[int]] = None,
-            parameter: Parameter = Parameter(),
-            active_parameter: int = 0,
-            session_id: Optional[int] = None,
-            originator: Originator = Originator.USER,
-            **functional_parameter: bytes
+        self,
+        node_ids: Optional[List[int]] = None,
+        parameter: Parameter = Parameter(),
+        active_parameter: int = 0,
+        session_id: Optional[int] = None,
+        originator: Originator = Originator.USER,
+        **functional_parameter: bytes
     ):
         """Init Frame."""
         super().__init__(Command.GW_COMMAND_SEND_REQ)
@@ -108,9 +109,13 @@ class FrameCommandSendRequest(FrameBase):
         return (
             '<{} node_ids="{}" active_parameter="{}" parameter="{}" functional_parameter="{}" '
             'session_id="{}" originator="{}"/>'.format(
-                type(self).__name__, self.node_ids, self.active_parameter,
-                self.parameter, functional_parameter,
-                self.session_id, self.originator,
+                type(self).__name__,
+                self.node_ids,
+                self.active_parameter,
+                self.parameter,
+                functional_parameter,
+                self.session_id,
+                self.originator,
             )
         )
 
@@ -127,7 +132,11 @@ class FrameCommandSendConfirmation(FrameBase):
 
     PAYLOAD_LEN = 3
 
-    def __init__(self, session_id: Optional[int] = None, status: Optional[CommandSendConfirmationStatus] = None):
+    def __init__(
+        self,
+        session_id: Optional[int] = None,
+        status: Optional[CommandSendConfirmationStatus] = None,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_COMMAND_SEND_CFM)
         self.session_id = session_id
@@ -159,12 +168,12 @@ class FrameCommandRunStatusNotification(FrameBase):
     PAYLOAD_LEN = 13
 
     def __init__(
-            self,
-            session_id: Optional[int] = None,
-            status_id: Optional[int] = None,
-            index_id: Optional[int] = None,
-            node_parameter: Optional[int] = None,
-            parameter_value: Optional[int] = None,
+        self,
+        session_id: Optional[int] = None,
+        status_id: Optional[int] = None,
+        index_id: Optional[int] = None,
+        node_parameter: Optional[int] = None,
+        parameter_value: Optional[int] = None,
     ):
         """Init Frame."""
         super().__init__(Command.GW_COMMAND_RUN_STATUS_NTF)
@@ -204,9 +213,12 @@ class FrameCommandRunStatusNotification(FrameBase):
         return (
             '<{} session_id="{}" status_id="{}" '
             'index_id="{}" node_parameter="{}" parameter_value="{}"/>'.format(
-                type(self).__name__, self.session_id,
-                self.status_id, self.index_id,
-                self.node_parameter, self.parameter_value
+                type(self).__name__,
+                self.session_id,
+                self.status_id,
+                self.index_id,
+                self.node_parameter,
+                self.parameter_value,
             )
         )
 
@@ -216,7 +228,13 @@ class FrameCommandRemainingTimeNotification(FrameBase):
 
     PAYLOAD_LEN = 6
 
-    def __init__(self, session_id: Optional[int] = None, index_id: Optional[int] = None, node_parameter: Optional[int] = None, seconds: int = 0):
+    def __init__(
+        self,
+        session_id: Optional[int] = None,
+        index_id: Optional[int] = None,
+        node_parameter: Optional[int] = None,
+        seconds: int = 0,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_COMMAND_REMAINING_TIME_NTF)
         self.session_id = session_id
@@ -247,8 +265,11 @@ class FrameCommandRemainingTimeNotification(FrameBase):
         return (
             '<{} session_id="{}" index_id="{}" '
             'node_parameter="{}" seconds="{}"/>'.format(
-                type(self).__name__, self.session_id,
-                self.index_id, self.node_parameter, self.seconds
+                type(self).__name__,
+                self.session_id,
+                self.index_id,
+                self.node_parameter,
+                self.seconds,
             )
         )
 
@@ -275,6 +296,4 @@ class FrameSessionFinishedNotification(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return '<{} session_id="{}"/>'.format(
-            type(self).__name__, self.session_id
-        )
+        return '<{} session_id="{}"/>'.format(type(self).__name__, self.session_id)

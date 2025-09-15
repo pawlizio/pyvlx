@@ -1,4 +1,5 @@
 """Unit tests for FrameGetLocalTimeConfirmation."""
+
 import unittest
 from datetime import datetime, timezone
 

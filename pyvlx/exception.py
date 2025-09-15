@@ -1,4 +1,5 @@
 """Module for PyVLX Exceptions."""
+
 from typing import Any
 
 

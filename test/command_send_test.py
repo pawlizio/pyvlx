@@ -1,4 +1,5 @@
 """Unit test for command send module."""
+
 import unittest
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -16,7 +17,9 @@ class TestCommandSend(unittest.IsolatedAsyncioTestCase):
     def setUp(self) -> None:
         """Set up TestCommandSend."""
         mocked_pyvlx = MagicMock()
-        self.command_send = CommandSend(pyvlx=mocked_pyvlx, node_id=23, parameter=Parameter())
+        self.command_send = CommandSend(
+            pyvlx=mocked_pyvlx, node_id=23, parameter=Parameter()
+        )
 
     async def test_handle_frame(self) -> None:
         """Test handle_frame function of CommandSend object."""

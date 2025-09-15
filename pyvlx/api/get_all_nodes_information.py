@@ -1,4 +1,5 @@
 """Module for retrieving node information from API."""
+
 from typing import TYPE_CHECKING, List
 
 from pyvlx.log import PYVLXLOG

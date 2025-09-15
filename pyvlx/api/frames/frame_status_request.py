@@ -1,4 +1,5 @@
 """Module for get node information from gateway."""
+
 from enum import Enum
 from typing import Dict, List, Optional
 
@@ -15,20 +16,22 @@ class FrameStatusRequestRequest(FrameBase):
 
     PAYLOAD_LEN = 26
 
-    def __init__(self, session_id: Optional[int] = None, node_ids: Optional[List[int]] = None):
+    def __init__(
+        self, session_id: Optional[int] = None, node_ids: Optional[List[int]] = None
+    ):
         """Init Frame."""
         super().__init__(Command.GW_STATUS_REQUEST_REQ)
         self.session_id = session_id
         self.node_ids = node_ids if node_ids is not None else []
         self.status_type = StatusType.REQUEST_CURRENT_POSITION
-        self.fpi1 = 254     # Request FP1 to FP7
+        self.fpi1 = 254  # Request FP1 to FP7
         self.fpi2 = 0
 
     def get_payload(self) -> bytes:
         """Return Payload."""
         assert self.session_id is not None
         ret = bytes([self.session_id >> 8 & 255, self.session_id & 255])
-        ret += bytes([len(self.node_ids)])      # index array count
+        ret += bytes([len(self.node_ids)])  # index array count
         ret += bytes(self.node_ids) + bytes(20 - len(self.node_ids))
         ret += bytes([self.status_type.value])
         ret += bytes([self.fpi1])
@@ -54,9 +57,12 @@ class FrameStatusRequestRequest(FrameBase):
         return (
             '<{} session_id="{}" node_ids="{}" '
             'status_type="{}" fpi1="{}" fpi2="{}"/>'.format(
-                type(self).__name__, self.session_id,
+                type(self).__name__,
+                self.session_id,
                 self.node_ids,
-                self.status_type, self.fpi1, self.fpi2
+                self.status_type,
+                self.fpi1,
+                self.fpi2,
             )
         )
 
@@ -73,7 +79,11 @@ class FrameStatusRequestConfirmation(FrameBase):
 
     PAYLOAD_LEN = 3
 
-    def __init__(self, session_id: Optional[int] = None, status: Optional[StatusRequestStatus] = None):
+    def __init__(
+        self,
+        session_id: Optional[int] = None,
+        status: Optional[StatusRequestStatus] = None,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_STATUS_REQUEST_CFM)
         self.session_id = session_id
@@ -119,7 +129,7 @@ class FrameStatusRequestNotification(FrameBase):
         self.target_position = Parameter()
         self.current_position = Parameter()
         self.remaining_time = 0
-        self.last_master_execution_address = b''
+        self.last_master_execution_address = b""
         self.last_command_originator = 0
 
     def get_payload(self) -> bytes:
@@ -134,7 +144,9 @@ class FrameStatusRequestNotification(FrameBase):
         if self.status_type == StatusType.REQUEST_MAIN_INFO:
             payload += bytes(self.target_position.raw)
             payload += bytes(self.current_position.raw)
-            payload += bytes([self.remaining_time >> 8 & 255, self.remaining_time & 255])
+            payload += bytes(
+                [self.remaining_time >> 8 & 255, self.remaining_time & 255]
+            )
             payload += self.last_master_execution_address
             payload += bytes([self.last_command_originator])
         else:
@@ -163,8 +175,10 @@ class FrameStatusRequestNotification(FrameBase):
             self.last_command_originator = payload[17]
         else:
             self.status_count = payload[7]
-            for i in range(8, 8 + self.status_count*3, 3):
-                self.parameter_data.update({NodeParameter(payload[i]): Parameter(payload[i+1:i+3])})
+            for i in range(8, 8 + self.status_count * 3, 3):
+                self.parameter_data.update(
+                    {NodeParameter(payload[i]): Parameter(payload[i + 1 : i + 3])}
+                )
 
     def __str__(self) -> str:
         """Return human readable string."""
@@ -207,6 +221,6 @@ class FrameStatusRequestNotification(FrameBase):
                 self.status_reply,
                 self.status_type,
                 self.status_count,
-                parameter_data_str
+                parameter_data_str,
             )
         )

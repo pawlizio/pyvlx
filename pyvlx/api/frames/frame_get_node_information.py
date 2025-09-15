@@ -1,4 +1,5 @@
 """Module for get node information from gateway."""
+
 import struct
 from datetime import datetime
 from enum import Enum
@@ -52,7 +53,11 @@ class FrameGetNodeInformationConfirmation(FrameBase):
 
     PAYLOAD_LEN = 2
 
-    def __init__(self, status: NodeInformationStatus = NodeInformationStatus.OK, node_id: Optional[int] = None):
+    def __init__(
+        self,
+        status: NodeInformationStatus = NodeInformationStatus.OK,
+        node_id: Optional[int] = None,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_GET_NODE_INFORMATION_CFM)
         self.status = status

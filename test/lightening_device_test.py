@@ -1,4 +1,5 @@
 """Unit test for lights."""
+
 import unittest
 from unittest.mock import MagicMock
 
@@ -32,19 +33,31 @@ class TestLighteningDevice(unittest.TestCase):
     def test_eq(self) -> None:
         """Testing eq method with positive results."""
         node1 = Light(
-            pyvlx=self.pyvlx, node_id=23, name="xxx", serial_number="aa:bb:aa:bb:aa:bb:aa:23"
+            pyvlx=self.pyvlx,
+            node_id=23,
+            name="xxx",
+            serial_number="aa:bb:aa:bb:aa:bb:aa:23",
         )
         node2 = Light(
-            pyvlx=self.pyvlx, node_id=23, name="xxx", serial_number="aa:bb:aa:bb:aa:bb:aa:23"
+            pyvlx=self.pyvlx,
+            node_id=23,
+            name="xxx",
+            serial_number="aa:bb:aa:bb:aa:bb:aa:23",
         )
         self.assertEqual(node1, node2)
 
     def test_nq(self) -> None:
         """Testing eq method with negative results."""
         node1 = Light(
-            pyvlx=self.pyvlx, node_id=23, name="xxx", serial_number="aa:bb:aa:bb:aa:bb:aa:23"
+            pyvlx=self.pyvlx,
+            node_id=23,
+            name="xxx",
+            serial_number="aa:bb:aa:bb:aa:bb:aa:23",
         )
         node2 = Light(
-            pyvlx=self.pyvlx, node_id=24, name="xxx", serial_number="aa:bb:aa:bb:aa:bb:aa:23"
+            pyvlx=self.pyvlx,
+            node_id=24,
+            name="xxx",
+            serial_number="aa:bb:aa:bb:aa:bb:aa:23",
         )
         self.assertNotEqual(node1, node2)

@@ -1,4 +1,5 @@
 """Module for all KLF 200 API frames."""
+
 # flake8: noqa
 
 from .activate_scene import ActivateScene

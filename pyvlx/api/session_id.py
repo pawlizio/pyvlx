@@ -1,6 +1,5 @@
 """Module for generating a unique session_id."""
 
-
 LAST_SESSION_ID = 0
 MAX_SESSION_ID = 65535
 

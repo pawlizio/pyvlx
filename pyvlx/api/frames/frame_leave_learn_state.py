@@ -1,4 +1,5 @@
 """Module for leave learn state frame classes."""
+
 from pyvlx.const import Command, LeaveLearnStateConfirmationStatus
 
 from .frame import FrameBase
@@ -15,7 +16,7 @@ class FrameLeaveLearnStateRequest(FrameBase):
 
     def __str__(self) -> str:
         """Return human readable string."""
-        return '<{}/>'.format(type(self).__name__)
+        return "<{}/>".format(type(self).__name__)
 
 
 class FrameLeaveLearnStateConfirmation(FrameBase):

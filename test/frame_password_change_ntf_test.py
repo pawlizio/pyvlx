@@ -1,4 +1,5 @@
 """Unit tests for PyVLX PasswordChangeNotification."""
+
 import unittest
 
 from pyvlx.api.frame_creation import frame_from_raw
@@ -48,9 +49,13 @@ class TestFramePasswordChange(unittest.TestCase):
     def test_str(self):
         """Test string representation of FramePasswordChangeNotification."""
         frame = FramePasswordChangeNotification(newpassword="fnord")
-        self.assertEqual(str(frame), '<FramePasswordChangeNotification newpassword="fn****"/>')
+        self.assertEqual(
+            str(frame), '<FramePasswordChangeNotification newpassword="fn****"/>'
+        )
 
     def test_str_no_password(self):
         """Test string representation of FramePasswordChangeNotification with no password."""
         frame = FramePasswordChangeNotification()
-        self.assertEqual(str(frame), '<FramePasswordChangeNotification newpassword="None"/>')
+        self.assertEqual(
+            str(frame), '<FramePasswordChangeNotification newpassword="None"/>'
+        )

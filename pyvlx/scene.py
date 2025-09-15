@@ -1,4 +1,5 @@
 """Module for scene."""
+
 from typing import TYPE_CHECKING, Any
 
 from .api import ActivateScene

@@ -1,4 +1,5 @@
 """Module for updating nodes via frames."""
+
 import datetime
 from typing import TYPE_CHECKING, Any
 

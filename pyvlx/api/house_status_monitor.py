@@ -1,4 +1,5 @@
 """Module for house status monitor."""
+
 from typing import TYPE_CHECKING
 
 from .api_event import ApiEvent

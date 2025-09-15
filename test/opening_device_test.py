@@ -1,4 +1,5 @@
 """Unit test for roller shutter."""
+
 from unittest import IsolatedAsyncioTestCase
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -19,9 +20,13 @@ class TestOpeningDevice(IsolatedAsyncioTestCase):
 
     @patch("pyvlx.api.CommandSend.send", new_callable=AsyncMock)
     @patch("pyvlx.Node.after_update", new_callable=AsyncMock)
-    async def test_set_position(self, commandSend: AsyncMock, afterUpdate: AsyncMock) -> None:
+    async def test_set_position(
+        self, commandSend: AsyncMock, afterUpdate: AsyncMock
+    ) -> None:
         """Test set_position of OpeningDevice object."""
-        opening_device = OpeningDevice(pyvlx=self.mocked_pyvlx, node_id=23, name="Test device")
+        opening_device = OpeningDevice(
+            pyvlx=self.mocked_pyvlx, node_id=23, name="Test device"
+        )
         await opening_device.set_position(position=Position(position_percent=100))
         assert commandSend.called
         assert afterUpdate.called
@@ -29,36 +34,48 @@ class TestOpeningDevice(IsolatedAsyncioTestCase):
     @patch("pyvlx.opening_device.OpeningDevice.set_position", new_callable=AsyncMock)
     async def test_open(self, set_position: AsyncMock) -> None:
         """Test open function of OpeningDevice object."""
-        opening_device = OpeningDevice(pyvlx=self.mocked_pyvlx, node_id=23, name="Test device")
+        opening_device = OpeningDevice(
+            pyvlx=self.mocked_pyvlx, node_id=23, name="Test device"
+        )
         velocity = Velocity.DEFAULT
         wait_for_completion = False
-        await opening_device.open(velocity=velocity, wait_for_completion=wait_for_completion)
+        await opening_device.open(
+            velocity=velocity, wait_for_completion=wait_for_completion
+        )
         set_position.assert_awaited_once_with(
             position=Position(position_percent=opening_device.open_position_target),
             velocity=velocity,
-            wait_for_completion=wait_for_completion)
+            wait_for_completion=wait_for_completion,
+        )
 
     @patch("pyvlx.opening_device.OpeningDevice.set_position", new_callable=AsyncMock)
     async def test_close(self, set_position: AsyncMock) -> None:
         """Test close function of OpeningDevice object."""
-        opening_device = OpeningDevice(pyvlx=self.mocked_pyvlx, node_id=23, name="Test device")
+        opening_device = OpeningDevice(
+            pyvlx=self.mocked_pyvlx, node_id=23, name="Test device"
+        )
         velocity = Velocity.DEFAULT
         wait_for_completion = False
-        await opening_device.close(velocity=velocity, wait_for_completion=wait_for_completion)
+        await opening_device.close(
+            velocity=velocity, wait_for_completion=wait_for_completion
+        )
         set_position.assert_awaited_once_with(
             position=Position(position_percent=opening_device.close_position_target),
             velocity=velocity,
-            wait_for_completion=wait_for_completion)
+            wait_for_completion=wait_for_completion,
+        )
 
     @patch("pyvlx.opening_device.OpeningDevice.set_position", new_callable=AsyncMock)
     async def test_stop(self, set_position: AsyncMock) -> None:
         """Test stop function of OpeningDevice object."""
-        opening_device = OpeningDevice(pyvlx=self.mocked_pyvlx, node_id=23, name="Test device")
+        opening_device = OpeningDevice(
+            pyvlx=self.mocked_pyvlx, node_id=23, name="Test device"
+        )
         wait_for_completion = False
         await opening_device.stop(wait_for_completion=wait_for_completion)
         set_position.assert_awaited_once_with(
-            position=CurrentPosition(),
-            wait_for_completion=wait_for_completion)
+            position=CurrentPosition(), wait_for_completion=wait_for_completion
+        )
 
     def test_window_str(self) -> None:
         """Test string representation of Window object."""

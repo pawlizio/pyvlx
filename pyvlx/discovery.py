@@ -1,4 +1,5 @@
 """Module to discover Velux KLF200 devices on the network."""
+
 import asyncio
 from asyncio import Event, Future, Task
 from dataclasses import dataclass
@@ -13,7 +14,7 @@ SERVICE_TYPE: str = "_http._tcp.local."
 
 
 @dataclass
-class VeluxHost():
+class VeluxHost:
     """Class to store Velux KLF200 host information."""
 
     hostname: str
@@ -29,17 +30,22 @@ def sanitize_hostname(hostname: str) -> str:
     return hostname
 
 
-class VeluxDiscovery():
+class VeluxDiscovery:
     """Class to discover Velux KLF200 devices on the network."""
 
     hosts: list[VeluxHost] = []
     infos: list[AsyncServiceInfo | None] = []
 
-    def __init__(self, zeroconf: AsyncZeroconf,) -> None:
+    def __init__(
+        self,
+        zeroconf: AsyncZeroconf,
+    ) -> None:
         """Initialize VeluxDiscovery object."""
         self.zc: AsyncZeroconf = zeroconf
 
-    async def _async_discover_hosts(self, min_wait_time: float, expected_hosts: int | None) -> None:
+    async def _async_discover_hosts(
+        self, min_wait_time: float, expected_hosts: int | None
+    ) -> None:
         """Listen for zeroconf ServiceInfo."""
         self.hosts.clear()
         service_names: list[str] = []
@@ -57,16 +63,22 @@ class VeluxDiscovery():
             self.hosts.append(host)
             got_host.set()
 
-        def handler(name: str, **kwargs: Any) -> None:  # pylint: disable=W0613:unused-argument
+        def handler(
+            name: str, **kwargs: Any
+        ) -> None:  # pylint: disable=W0613:unused-argument
             if name.startswith(SERVICE_STARTS_WITH):
                 if name not in service_names:
                     service_names.append(name)
-                    task = asyncio.create_task(self.zc.async_get_service_info(type_=SERVICE_TYPE, name=name))
+                    task = asyncio.create_task(
+                        self.zc.async_get_service_info(type_=SERVICE_TYPE, name=name)
+                    )
                     tasks.add(task)
                     task.add_done_callback(add_info_and_host)
                     task.add_done_callback(tasks.remove)
 
-        browser: AsyncServiceBrowser = AsyncServiceBrowser(self.zc.zeroconf, SERVICE_TYPE, handlers=[handler])
+        browser: AsyncServiceBrowser = AsyncServiceBrowser(
+            self.zc.zeroconf, SERVICE_TYPE, handlers=[handler]
+        )
         if expected_hosts:
             while len(self.hosts) < expected_hosts:
                 await got_host.wait()
@@ -81,7 +93,7 @@ class VeluxDiscovery():
         self,
         timeout: float = 10,
         min_wait_time: float = 3,
-        expected_hosts: Optional[int] = None
+        expected_hosts: Optional[int] = None,
     ) -> bool:
         """Return true if Velux KLF200 devices found on the network.
 

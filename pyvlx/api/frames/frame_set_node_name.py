@@ -1,4 +1,5 @@
 """Module for requesting change of node name."""
+
 from enum import Enum
 from typing import Optional
 
@@ -51,7 +52,11 @@ class FrameSetNodeNameConfirmation(FrameBase):
 
     PAYLOAD_LEN = 2
 
-    def __init__(self, status: SetNodeNameConfirmationStatus = SetNodeNameConfirmationStatus.OK, node_id: int = 0):
+    def __init__(
+        self,
+        status: SetNodeNameConfirmationStatus = SetNodeNameConfirmationStatus.OK,
+        node_id: int = 0,
+    ):
         """Init Frame."""
         super().__init__(Command.GW_SET_NODE_NAME_CFM)
         self.status = status
