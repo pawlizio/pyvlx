@@ -7,6 +7,7 @@ and roller shutters.
 """
 import asyncio
 from typing import Optional
+from importlib.metadata import version, PackageNotFoundError
 
 from .api import get_limitation
 from .api.frames import FrameBase
@@ -19,6 +20,12 @@ from .log import PYVLXLOG
 from .node_updater import NodeUpdater
 from .nodes import Nodes
 from .scenes import Scenes
+
+# read package version once at import time
+try:
+    PYVLX_VERSION = version("pyvlx")
+except PackageNotFoundError:
+    PYVLX_VERSION = "unknown"
 
 
 class PyVLX:
@@ -47,14 +54,14 @@ class PyVLX:
         self.connection.register_frame_received_cb(self.node_updater.process_frame)
 
         self.scenes = Scenes(self)
-        self.version = None
+        self.version = PYVLX_VERSION
         self.protocol_version = None
         self.klf200 = Klf200Gateway(pyvlx=self)
         self.api_call_semaphore = asyncio.Semaphore(1)  # Limit parallel commands
 
     async def connect(self) -> None:
         """Connect to KLF 200."""
-        PYVLXLOG.debug("Connecting to KLF 200")
+        PYVLXLOG.debug("Connecting to KLF 200 using pyvlx version: %s", self.version)
         await self.connection.connect()
         assert self.config.password is not None
         await self.klf200.password_enter(password=self.config.password)
@@ -106,7 +113,7 @@ class PyVLX:
                 await self.klf200.reboot()
             except (OSError, PyVLXException):
                 pass
-            self.connection.disconnect()
+            # self.connection.disconnect()
             if self.connection.tasks:
                 await asyncio.gather(*self.connection.tasks)  # Wait for all tasks to finish
 
